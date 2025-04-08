@@ -107,9 +107,12 @@ def StatScraper(link):
         except ValueError:
             index = -1
         if index != -1:
-            weight = weight[index - 5:index-1]
-            if not weight[0].isdigit():
-                weight = weight[2:4]
+            if weight[index - 6] == '1':
+                weight = weight[index - 6:index-1]
+            else:
+                weight = weight[index - 5:index-1]
+                if not weight[0].isdigit():
+                    weight = weight[2:4]
             j+=1
         else:
             athletes = soup.find_all("a", class_ = 'is-link is-distinct')
@@ -286,6 +289,7 @@ if __name__ == "__main__":
     # Matchup('https://www.onefc.com/athletes/christian-lee/')
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
     PageGather()
-    # StatScraper('https://www.onefc.com/athletes/demetrious-johnson/')
+    # StatScraper('https://www.onefc.com/athletes/andrei-stoica/')
+    # StatScraper('https://www.onefc.com/athletes/roman-kryklia/')
     # OpponentWeight('https://www.onefc.com/athletes/demetrious-johnson/')
     # f.AthleteScraper2(1)
