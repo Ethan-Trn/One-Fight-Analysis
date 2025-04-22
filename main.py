@@ -107,8 +107,10 @@ def StatScraper(link):
         except ValueError:
             index = -1
         if index != -1:
+            #fatboy
             if weight[index - 6] == '1':
                 weight = weight[index - 6:index-1]
+                
             else:
                 weight = weight[index - 5:index-1]
                 if not weight[0].isdigit():
@@ -276,20 +278,20 @@ def Matchup(link):
     return results
             
 if __name__ == "__main__":
-    if os.path.exists("athlete_stats.csv"):
-        os.remove("athlete_stats.csv")
-        print("Old CSV deleted. Starting fresh.")
-    else:
-        print("No old CSV found. You're good.")
-    if os.path.exists("fight_records.csv"):
-        os.remove("fight_records.csv")
-        print("Old CSV deleted. Starting fresh.")
-    else:
-        print("No old CSV found. You're good.")
+    # if os.path.exists("athlete_stats.csv"):
+    #     os.remove("athlete_stats.csv")
+    #     print("Old CSV deleted. Starting fresh.")
+    # else:
+    #     print("No old CSV found. You're good.")
+    # if os.path.exists("fight_records.csv"):
+    #     os.remove("fight_records.csv")
+    #     print("Old CSV deleted. Starting fresh.")
+    # else:
+    #     print("No old CSV found. You're good.")
     # Matchup('https://www.onefc.com/athletes/christian-lee/')
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
-    PageGather()
-    # StatScraper('https://www.onefc.com/athletes/andrei-stoica/')
+    # PageGather()
+    StatScraper('https://www.onefc.com/athletes/alex-roberts/')
     # StatScraper('https://www.onefc.com/athletes/roman-kryklia/')
     # OpponentWeight('https://www.onefc.com/athletes/demetrious-johnson/')
     # f.AthleteScraper2(1)

@@ -22,16 +22,30 @@ def OpponentWeight(link):
             index = weight.index("KG")
         except ValueError:
             index = -1
-        if index != -1:
+        if weight[index - 6] == '1':
+            weight = weight[index - 6:index-1]
+        else:
             weight = weight[index - 5:index-1]
             if not weight[0].isdigit():
-                return weight[2:4]
-            else:
-                print("Worked")
-                return weight
+                weight = weight[2:4]
     else:
         print("No Worked")
         return -1
+def FindWeightText(link):
+    url = link
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    sys.stdout.reconfigure(encoding='utf-8')
+    #Look For It By reading their description
+    paragraphs = soup.find_all('p')
+    for paragraph in paragraphs:
+        text = paragraph.text.lower()
+        if '' in text or 'him' in text:
+            gender = "Male"
+            break
+        elif 'she' in text or 'her' in text:
+            gender = "Female"
+            break
 #Basically the same as AthleteScrapper but instead of getting a csv it just displays all the info
 def AthleteScraper2(i):
     print(f"Scraping page {i}")
