@@ -29,7 +29,7 @@ def OpponentWeight(link):
             if not weight[0].isdigit():
                 weight = weight[2:4]
     else:
-        print("No Worked")
+        print("Finding Weight: No Worked")
         return -1
 def FindWeightText(link):
     url = link
@@ -92,3 +92,4 @@ def AthleteScraper2(i):
         except Exception as e:
             print(f"Error scraping {href}: {e}")
         print("------------------------------")
+

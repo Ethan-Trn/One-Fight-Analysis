@@ -34,10 +34,10 @@ def AthleteScraper(i):
             stats_writer.writerow(['Name', 'Weight (kg)', 'Height (cm)', 'Country', 'Age', 'Team', 'Sport', 'Gender',
                                    'WIN', 'LOSS', 'DRAW','W TKO', 'W Submission', 'W Disqualification', 'W Unanimous Decision',
                                    'W Split Decision', 'L TKO', 'L Submission', 'L Disqualification', 'L Unanimous Decision',
-                                   'L Split Decision'])
+                                   'L Split Decision','Total Fights', 'Weight Class'])
 
         if not fights_exists:
-            fights_writer.writerow(['Fighter', 'Opponent', 'Result', 'Method'])
+            fights_writer.writerow(['Fighter', 'Opponent', 'Result', 'Method','Date'])
 
         for link in AllLinks:
             href = link.get("href")
@@ -117,6 +117,7 @@ def StatScraper(link):
                     weight = weight[2:4]
             j+=1
         else:
+            #Look at the Opponent Weight
             athletes = soup.find_all("a", class_ = 'is-link is-distinct')
             if athletes:
                 for athlete in athletes:
@@ -124,6 +125,17 @@ def StatScraper(link):
                     if weight != -1:
                         break
             else:
+                #Look at the text if it says anything about the weight class they fight in 
+                paragraphs = soup.find_all('p')
+                for paragraph in paragraphs:
+                    text = paragraph.text.lower()
+                    if 'he' in text or 'him' in text:
+                        gender = "Male"
+                        break
+                    elif 'she' in text or 'her' in text:
+                        gender = "Female"
+                        break
+
                 weight = -1
         # print(weight)
         #height
@@ -193,6 +205,8 @@ def Matchup(link):
                 try:
                     opponent_tag = row.find('h5', class_='fs-100 m-0')
                     opponent_name = opponent_tag.text.strip() if opponent_tag else "Unknown"
+                    date_tag = row.find('td', class_='date d-none d-xxl-table-cell')
+                    date = date_tag.text.strip() if date_tag else None
                     #write this later for it to be your own
                     result_tag = row.find('div', class_="is-distinct is-positive") or \
                                 row.find('div', class_="is-distinct is-negative")
@@ -215,7 +229,7 @@ def Matchup(link):
                         MethodOf = "Knockout"
                     else:
                         MethodOf = "Unknown"
-                    results.append([athlete_name, opponent_name, result, MethodOf])
+                    results.append([athlete_name, opponent_name, result, MethodOf,date])
                 except Exception as e:
                     print(f"Error processing opponent: {e}")
     
@@ -267,7 +281,7 @@ def Matchup(link):
                     print(f"Error processing opponent: {e}")
             page += 1
     results = np.array(results)
-    results = pd.DataFrame(results, columns=['Fighter', 'Opponent', 'Result', 'Method'])
+    results = pd.DataFrame(results, columns=['Fighter', 'Opponent', 'Result', 'Method', 'Date'])
     #print out all the wins
     # print(results[results['Result'] == 'WIN'].shape[0])
     #print out all the losses
@@ -278,20 +292,20 @@ def Matchup(link):
     return results
             
 if __name__ == "__main__":
-    # if os.path.exists("athlete_stats.csv"):
-    #     os.remove("athlete_stats.csv")
-    #     print("Old CSV deleted. Starting fresh.")
-    # else:
-    #     print("No old CSV found. You're good.")
-    # if os.path.exists("fight_records.csv"):
-    #     os.remove("fight_records.csv")
-    #     print("Old CSV deleted. Starting fresh.")
-    # else:
-    #     print("No old CSV found. You're good.")
+    if os.path.exists("athlete_stats.csv"):
+        os.remove("athlete_stats.csv")
+        print("Old CSV deleted. Starting fresh.")
+    else:
+        print("No old CSV found. You're good.")
+    if os.path.exists("fight_records.csv"):
+        os.remove("fight_records.csv")
+        print("Old CSV deleted. Starting fresh.")
+    else:
+        print("No old CSV found. You're good.")
     # Matchup('https://www.onefc.com/athletes/christian-lee/')
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
-    # PageGather()
-    StatScraper('https://www.onefc.com/athletes/alex-roberts/')
+    PageGather()
+    # StatScraper('https://www.onefc.com/athletes/alex-roberts/')
     # StatScraper('https://www.onefc.com/athletes/roman-kryklia/')
     # OpponentWeight('https://www.onefc.com/athletes/demetrious-johnson/')
     # f.AthleteScraper2(1)
