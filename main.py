@@ -6,19 +6,22 @@ import pandas as pd # type: ignore
 import numpy as np # type: ignore
 import os
 import Functions as f
-
+import re
 def PageGather():
     for i in range(68):
         AthleteScraper(i+1)
 
 def AthleteScraper(i):
+    #Goes into the One Championship Athlete Page #
     print(f"Scraping page {i}")
     url = f'https://www.onefc.com/athletes/page/{i}/'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     sys.stdout.reconfigure(encoding='utf-8')
+    #This gets all the links to the athletes for that specific page
     AllLinks = soup.find_all("a", class_='title text-center')
-
+    
+    #Looks For the athlete_stats.csv and fight_record and create if it isn't there
     stats_file = 'athlete_stats.csv'
     fights_file = 'fight_records.csv'
     stats_exists = os.path.isfile(stats_file)
@@ -31,14 +34,14 @@ def AthleteScraper(i):
         fights_writer = csv.writer(f_file)
 
         if not stats_exists:
-            stats_writer.writerow(['Name', 'Weight (kg)', 'Height (cm)', 'Country', 'Age', 'Team', 'Sport', 'Gender',
+            stats_writer.writerow(['Name', 'Weight (kg)', 'Height (cm)', 'Country', 'Age', 'Team', 'Sport', 'Gender','Weight Class'
                                    'WIN', 'LOSS', 'DRAW','W TKO', 'W Submission', 'W Disqualification', 'W Unanimous Decision',
                                    'W Split Decision', 'L TKO', 'L Submission', 'L Disqualification', 'L Unanimous Decision',
-                                   'L Split Decision','Total Fights', 'Weight Class'])
+                                   'L Split Decision','Total Fights'])
 
         if not fights_exists:
             fights_writer.writerow(['Fighter', 'Opponent', 'Result', 'Method','Date'])
-
+        #This is for going inside the link
         for link in AllLinks:
             href = link.get("href")
             try:
@@ -47,7 +50,7 @@ def AthleteScraper(i):
                     print(f"No matchups found for {href}")
                     continue
 
-                # Write matchups to the CSV file
+                # Write matchups to the Fight_Record
                 fights_writer.writerows(matchups.values.tolist())
 
                 # Calculate statistics
@@ -64,12 +67,13 @@ def AthleteScraper(i):
                 l_disqualification = matchups[(matchups['Result'] == 'LOSS') & (matchups['Method'] == 'Disqualification')].shape[0]
                 l_unanimous_decision = matchups[(matchups['Result'] == 'LOSS') & (matchups['Method'] == 'Unanimous Decision')].shape[0]
                 l_split_decision = matchups[(matchups['Result'] == 'LOSS') & (matchups['Method'] == 'Split Decision')].shape[0]
+                Total_Fights = len(matchups)
 
                 # Get athlete stats and write to stats file
                 stat_data = StatScraper(href)
                 stats_writer.writerow(stat_data + [WIN, LOSS, DRAW,w_tko, w_submission, w_disqualification, w_unanimous_decision,
                                                    w_split_decision, l_tko, l_submission, l_disqualification,
-                                                   l_unanimous_decision, l_split_decision])
+                                                   l_unanimous_decision, l_split_decision,Total_Fights])
                 print(f"Scraped {href} successfully.")
             except Exception as e:
                 print(f"Error scraping {href}: {e}")
@@ -79,6 +83,8 @@ def StatScraper(link):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     sys.stdout.reconfigure(encoding='utf-8')
+    #Creating Dictionary For Both Gender and Weight Recursion
+    visted_links = {link}
     #get the athlete name
     athlete_name = soup.find('h1',class_ = 'use-letter-spacing-hint my-4')
     if athlete_name:
@@ -100,28 +106,33 @@ def StatScraper(link):
     attributes = soup.find_all('div', class_ = 'value')
     # print(attributes.__len__())
     if attributes.__len__() >= 4:
-        #weight
+        #tries to look for theweight
         weight = attributes[j].text.strip()
         try:
             index = weight.index("KG")
         except ValueError:
             index = -1
         if index != -1:
-            #fatboy
+            #if he weights >- 100kg with decimal
             if weight[index - 6] == '1':
                 weight = weight[index - 6:index-1]
-                
+            #lighterman skill or a > 100kg without decimal
             else:
                 weight = weight[index - 5:index-1]
                 if not weight[0].isdigit():
-                    weight = weight[2:4]
+                    if weight[1] ==  '1':
+                        weight = weight[1:4]
+                    else:
+                        weight = weight[2:4]
             j+=1
+        #if weight isn't identified look for the opponent's weight
         else:
             #Look at the Opponent Weight
-            athletes = soup.find_all("a", class_ = 'is-link is-distinct')
+            athletes = soup.find_all("a", class_ = 'opponent')
             if athletes:
                 for athlete in athletes:
-                    weight = f.OpponentWeight(athlete.get("href"))
+                    athlete_link = soup.find("a", class_ = 'is-link is-distinct')
+                    weight = f.OpponentWeight(athlete.get("href"),visted_links)
                     if weight != -1:
                         break
             else:
@@ -129,14 +140,38 @@ def StatScraper(link):
                 paragraphs = soup.find_all('p')
                 for paragraph in paragraphs:
                     text = paragraph.text.lower()
-                    if 'he' in text or 'him' in text:
-                        gender = "Male"
+                    if 'heavyweight' in text:
+                        weight = 102.06
                         break
-                    elif 'she' in text or 'her' in text:
-                        gender = "Female"
+                    elif 'light heavyweight' in text:
+                        weight = 92.99
                         break
-
-                weight = -1
+                    elif 'middleweight' in text:
+                        weight = 83.91
+                        break
+                    elif 'welterweight' in text:
+                        weight = 77.11
+                        break
+                    elif 'lightweight' in text:
+                        weight = 70.31
+                        break
+                    elif 'featherweight' in text:
+                        weight = 65.77
+                        break
+                    elif 'bantamweight' in text:
+                        weight = 61.23
+                        break
+                    elif 'flyweight' in text:
+                        weight = 56.70
+                        break
+                    elif 'strawweight' in text:
+                        weight = 52.16
+                        break
+                    elif 'atomweight' in text:
+                        weight = 47.63
+                        break
+        visted_links.clear()
+        visted_links.add(url)
         # print(weight)
         #height
         height = attributes[j].text.strip()
@@ -151,6 +186,7 @@ def StatScraper(link):
         else:
             height = -1
             # print(height)
+        height = float(height)
         #country 
         country = attributes[j].text.strip()
         j+=1
@@ -158,7 +194,11 @@ def StatScraper(link):
         #age
         age = attributes[j].text.strip()
         age = age[0:2]
-        j+=1
+        if not age.isdigit():
+            age = -1
+        else:
+            age = int(age)
+            j+=1
         # print (age)
         #Team
         #if they have a 1 one it means they have no team
@@ -178,9 +218,46 @@ def StatScraper(link):
         elif 'she' in text or 'her' in text:
             gender = "Female"
             break
+    if gender == "NA":
+         #Look at the Opponent Gender
+        athletes = soup.find_all("a", class_ = 'is-link is-distinct')
+        if athletes:
+            for athlete in athletes:
+                gender = f.OpponentGender(athlete.get("href"),visted_links)
+                if gender != "NA":
+                    break
+    #Getting the weight class
+    try:
+        weight = float(weight)
+    except (ValueError, TypeError):
+        weight = -1
 
-    print(f"Name: {athlete_name}, Gender: {gender}, Weight: {weight}, Height: {height}, Country: {country}, Age: {age}, Team: {team}, Sport: {sport}")
-    return [athlete_name, weight, height, country, age, team, sport, gender]
+    if weight >= 102.06 and weight <= 120.20:
+        weight_class = "Heavyweight"
+    elif weight >= 92.99:
+        weight_class = "Light Heavyweight"
+    elif weight >= 83.91:
+        weight_class = "Middleweight"
+    elif weight >= 77.11:
+        weight_class = "Welterweight"
+    elif weight >= 70.31:
+        weight_class = "Lightweight"
+    elif weight >= 65.77:
+        weight_class = "Featherweight"
+    elif weight >= 61.23:
+        weight_class = "Bantamweight"
+    elif weight >= 56.70:
+        weight_class = "Flyweight"
+    elif weight >= 52.16:
+        weight_class = "Strawweight"
+    elif weight >= 47.63:
+        weight_class = "Atomweight"
+    else:
+        weight_class = "Out of range"
+
+
+    print(f"Name: {athlete_name}, Gender: {gender}, Weight: {weight}, Height: {height}, Country: {country}, Age: {age}, Team: {team}, Sport: {sport}, Weight Class: {weight_class}")
+    return [athlete_name, weight, height, country, age, team, sport, gender,weight_class]
 
     # else:
         # print ("------------")
@@ -198,8 +275,11 @@ def Matchup(link):
     #what is this doing
     #getting the page of each match up
     load_more = soup.find('a', class_='load-more action-button is-desktop-one-line mt-4')
+    #Checks how many fighter are there 
+    #This is the case if there is only one page
     if not load_more:
         print ("Only One page")
+        #This grabs all the matchups the athlete has fought
         matchups = soup.find_all('tr', class_='is-data-row')
         for row in matchups:
                 try:
@@ -232,23 +312,24 @@ def Matchup(link):
                     results.append([athlete_name, opponent_name, result, MethodOf,date])
                 except Exception as e:
                     print(f"Error processing opponent: {e}")
-    
+#if there are multiple pages that needed to be loaded
     else:
-        #getting the link to the fight records
+        #will look smth like this: 'https://www.onefc.com/athletes/anatoly-malykhin/matchups/page/' 
+        #will become with page # to get each page
         base_url = load_more.get("href")
         base_url = base_url[0:base_url.index("2/")]
         page = 1
-        
-
         while True:
-            url = f"{base_url}{page}/"
+            url = base_url + str(page) +"/"
             # print (f"Scraping page {page}...")
+            #signal 404 is like no can find
             response = requests.get(url)
-            if response.status_code == 404:
+            if response.status_code >= 400:
                 print(f"Page {page} not found. Stopping.")
                 break
 
             soup = BeautifulSoup(response.text, 'html.parser')
+            #this grabs each row or matchup
             matchups = soup.find_all('tr', class_='is-data-row')
 
             for row in matchups:
@@ -259,6 +340,8 @@ def Matchup(link):
                     result_tag = row.find('div', class_="is-distinct is-positive") or \
                                 row.find('div', class_="is-distinct is-negative")
                     result = result_tag.text.strip() if result_tag else "Unknown"
+                    date_tag = row.find('td', class_='date d-none d-xxl-table-cell')
+                    date = date_tag.text.strip() if date_tag else None
                     MethodOf = row.find('td', class_="method d-none d-lg-table-cell").text.strip()
                     if "TKO" in MethodOf:
                         MethodOf = "TKO"
@@ -276,7 +359,7 @@ def Matchup(link):
                         MethodOf = "Knockout"
                     else:
                         MethodOf = "Unknown"
-                    results.append([athlete_name, opponent_name, result, MethodOf])
+                    results.append([athlete_name, opponent_name, result, MethodOf,date])
                 except Exception as e:
                     print(f"Error processing opponent: {e}")
             page += 1
@@ -302,10 +385,11 @@ if __name__ == "__main__":
         print("Old CSV deleted. Starting fresh.")
     else:
         print("No old CSV found. You're good.")
-    # Matchup('https://www.onefc.com/athletes/christian-lee/')
+    # tag = 'https://www.onefc.com/athletes/anton-petrov/'
+    # Matchup(tag)
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
     PageGather()
-    # StatScraper('https://www.onefc.com/athletes/alex-roberts/')
+    # StatScraper(tag)
     # StatScraper('https://www.onefc.com/athletes/roman-kryklia/')
     # OpponentWeight('https://www.onefc.com/athletes/demetrious-johnson/')
     # f.AthleteScraper2(1)

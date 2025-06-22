@@ -13,4 +13,7 @@ from tensorflow.keras.models      import Sequential
 from tensorflow.keras.layers      import Conv2D, MaxPooling2D, Activation, Dropout, Flatten, Dense
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-#loading data
+#loading in the dataset
+images = []
+gender = []
+
