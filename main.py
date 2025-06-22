@@ -212,10 +212,10 @@ def StatScraper(link):
     paragraphs = soup.find_all('p')
     for paragraph in paragraphs:
         text = paragraph.text.lower()
-        if ' she ' in text or ' her ' in text or 'she ' in text or 'her ':
+        if ' she ' in text or ' her ' in text:
             gender = "Female"
             break
-        elif 'he ' in text or 'his ' in text or ' he ' in text or ' his ':
+        elif ' he ' in text or ' his ':
             gender = "Male"
             break
     if gender == "NA":
@@ -267,8 +267,8 @@ def Matchup(link):
     response = requests.get(link)
     soup = BeautifulSoup(response.text, 'html.parser')
     sys.stdout.reconfigure(encoding='utf-8')
-    # print("Chigga")
-
+    
+    #At
     name_tag = soup.find('h1', class_='use-letter-spacing-hint my-4')
     athlete_name = name_tag.text.strip() if name_tag else "Unknown"
 
