@@ -212,11 +212,11 @@ def StatScraper(link):
     paragraphs = soup.find_all('p')
     for paragraph in paragraphs:
         text = paragraph.text.lower()
-        if 'he' in text or 'him' in text:
-            gender = "Male"
-            break
-        elif 'she' in text or 'her' in text:
+        if ' she ' in text or ' her ' in text or 'she ' in text or 'her ':
             gender = "Female"
+            break
+        elif 'he ' in text or 'his ' in text or ' he ' in text or ' his ':
+            gender = "Male"
             break
     if gender == "NA":
          #Look at the Opponent Gender

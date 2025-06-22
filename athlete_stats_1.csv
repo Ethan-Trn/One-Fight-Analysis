@@ -1,4 +1,4 @@
-Name,Weight (kg),Height (cm),Country,Age,Team,Sport,Gender,Weight ClassWIN,LOSS,DRAW,W TKO,W Submission,W Disqualification,W Unanimous Decision,W Split Decision,L TKO,L Submission,L Disqualification,L Unanimous Decision,L Split Decision,Total Fights
+Name,Weight (kg),Height (cm),Country,Age,Team,Sport,Gender,Weight Class,WIN,LOSS,DRAW,W TKO,W Submission,W Disqualification,W Unanimous Decision,W Split Decision,L TKO,L Submission,L Disqualification,L Unanimous Decision,L Split Decision,Total Fights
 Alexis “Barboza” Nicolas,76.6,183.0,France,26,Mahmoudi Gym,Kickboxing,Male,Lightweight,2,2,0,0,0,0,2,0,0,0,0,1,0,4
 Allycia Hellen Rodrigues,52.2,161.0,Brazil,27,Phuket Fight Club,Muay Thai,Male,Strawweight,4,1,0,1,0,0,2,0,1,0,0,0,0,5
 Anatoly “Sladkiy” Malykhin,92.8,180.0,Russia,37,Golden Team,MMA,Male,Middleweight,6,1,0,3,0,0,0,0,0,0,0,0,1,7
@@ -1046,3 +1046,478 @@ Petphathai Bumrungsit,55.4,168.0,Thailand,18,Lampang Sports School,Muay Thai,Mal
 Petphupa Aekpujean,58.0,175.0,Thailand,19,Superbon Training Camp,Muay Thai,Male,Flyweight,2,2,0,0,0,0,2,0,0,0,0,0,1,4
 Petporwarit Sor Sommai,-1,177.0,Thailand,21,Sor Sommai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
 Petputhai Or Bor Jor Nakhonpanom,-1,175.0,Thailand,23,Or Bor Jor Nakhonpanom gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Petrapha Sor Sopit,-1,165.0,Thailand,29,Sor Sopit,Muay Thai,Male,Out of range,1,1,0,0,0,0,0,1,0,0,0,0,0,2
+Petrit Nokkhao KorMor11,50.2,166.0,Thailand,19,Nokkhao Kor Mor 11,Muay Thai,Male,Atomweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Petru Morari,-1,175.0,Moldova,26,Team Mehdi Zatout,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Petsaenchai M U Den KhonmaiBaowee,60.8,175.0,Thailand,23,FA Group,Muay Thai,Male,Flyweight,3,1,0,0,0,0,0,1,0,0,0,0,0,4
+Petsaenkom Sor Sommai,-1,170.0,Thailand,25,Sor Sommai,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Petsaenkom Yaicheyseafood,-1,172.0,Thailand,28,Yaicheyseafood,Muay Thai,Male,Out of range,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+Petsangwan Sor Samarngarment,-1,170.0,Thailand,22,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Petsansab Sor Jaruwan,56.0,165.0,Thailand,22,Sor Jaruwan,Muay Thai,Male,Strawweight,1,1,0,0,0,0,1,0,0,0,0,1,0,2
+Petsansuk ChotBangsaen,-1,168.0,Thailand,21,Chonburi Art Muay Thai,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,0,2
+Petseekiew Kor Kampanart,-1,173.0,Thailand,23,Kor Kampanart,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Petseenin Wankhongohm MBK,-1,-1.0,Thailand,22,TDed99,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Petsimok PK Saenchai,59.6,168.0,Thailand,29,PK Saenchai Muaythaigym,Muay Thai,Male,Flyweight,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Petsinchai Kingballroofphuket,-1,175.0,Thailand,21,Kings Ball Roof Phuket,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Petsirichai Detpetchsrithong,61.7,173.0,Thailand,25,Detpetchsrithong,Muay Thai,Male,Bantamweight,1,1,0,0,0,0,0,1,0,0,0,0,1,2
+Petsommai Sor Sommai,-1,165.0,Thailand,27,Sor Sommai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Petsukumvit Boi Bangna,-1,170.0,Thailand,27,An Sukhumvit,Muay Thai,Male,Out of range,4,4,0,1,0,0,2,0,0,0,0,2,0,8
+Petsuwan Boomdeksean,57.9,168.0,Thailand,23,Boomdeksean,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Pettapee Rongrienkelasurat,55.1,168.0,Thailand,21,PU Pabai,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Pettasuea Seeopal,53.0,164.0,Thailand,21,Seeopal,Muay Thai,Male,Strawweight,2,2,0,0,0,0,0,0,0,0,0,1,0,4
+Pettaweesak Sangmorakot,57.0,175.0,Thailand,19,Sangmorakot,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Petthongkao Patcharagym,-1,165.0,Thailand,17,Patcharagym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Pettong Kiatsongrit,-1,172.0,Thailand,20,Kiatsongrit Muay Thai Gym,Muay Thai,Male,Out of range,0,3,0,0,0,0,0,0,0,0,0,1,0,3
+Pettonglor Sitluangpeenumfon,-1,174.0,Thailand,24,An Sukhumvit,Muay Thai,Male,Out of range,3,1,0,0,0,0,2,1,0,0,0,1,0,4
+Petwanghin Lookpayakraipakdee,-1,173.0,Thailand,20,Lookpayakraipakdee / Por Petchkaikaew,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Petwichit Singha Mawynn,61.7,175.0,Thailand,23,Singha Mawyn,Muay Thai,Male,Bantamweight,4,5,0,0,0,0,2,1,0,0,0,4,1,9
+Petwiset Petkiatpet,-1,170.0,Thailand,22,Kiatpet,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Peyman Zolfaghari,54.0,176.0,Iran,28,Team Mehdi Zatout,Muay Thai,Male,Strawweight,1,2,0,0,0,0,1,0,0,0,0,0,0,3
+Pham “Nam Chou” Van Nam,57.4,165.0,Vietnam,33,Saigon Sports Club,MMA,Male,Flyweight,1,1,0,1,0,0,0,0,1,0,0,0,0,2
+Phan Thanh Tung,-1,165.0,Vietnam,32,Agoge,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Phetchumpair Highland Gym,-1,165.0,Thailand,30,Highland Gym,Muay Thai,Male,Out of range,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Philip Kim,61.2,166.0,Australia,44,Team Perosh MMA,MMA,Male,Flyweight,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Pichai Lookbanmai,-1,161.0,Thailand,18,Lookbanmai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Pichitchai PK Saenchai,54.7,160.0,Thailand,29,PK Saenchai Muaythaigym,Muay Thai,Male,Strawweight,3,1,0,0,0,0,2,1,0,0,0,1,0,4
+Ploykhao Or AudUdon,-1,157.0,Thailand,22,Sitjaykarn,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,1,0,0,0,0,2
+Ploymuangjan Smile Muaythai,-1,168.0,Thailand,34,Smile Muaythai Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Ploypanlan PK Saenchai,-1,173.0,Thailand,23,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Pol Pascual,56.8,168.0,Spain,22,Sit Thailand Muay Thai Gym,Muay Thai,Male,Flyweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Pompet PK Saenchai,-1,170.0,Thailand,26,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,5,3,0,1,0,0,2,0,0,0,0,2,0,8
+Pongsiri PK Saenchai,65.8,169.0,Thailand,34,PK Saenchai Muaythaigym,Muay Thai,Male,Featherweight,4,6,0,0,0,0,3,0,0,0,0,3,1,10
+Pongsiri Sujeebameekiew,56.7,163.0,Thailand,27,Sor Jor Wichitpadriew,Muay Thai,Male,Flyweight,2,3,0,0,0,0,1,0,0,0,0,1,1,5
+Poriya Golpour,-1,168.0,Iran,28,Venum Training Camp,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Pornsanae Sor Phumipat,57.5,170.0,Thailand,26,Sor Phumpat,Muay Thai,Male,Flyweight,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Pornsiri PK Saenchai,65.8,165.0,Thailand,34,PK Saenchai Muaythaigym,Muay Thai,Male,Featherweight,0,3,0,0,0,0,0,0,0,0,0,1,0,3
+Poye Adsanpatong,54.7,167.0,Thailand,25,Wor Santai,Muay Thai,Male,Strawweight,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Prakaypetlek EminentAir,55.5,163.0,Thailand,28,EminentAir,Muay Thai,Male,Strawweight,2,1,0,0,0,0,1,0,0,0,0,0,0,3
+Prikthaidam Jitmuangnon,-1,163.0,Thailand,23,Jitmuangnon Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Priscilla Hertati “Thathie” Lumban Gaol,52.2,155.0,Indonesia,37,Siam Training Camp,MMA,Male,Strawweight,7,5,0,1,2,0,4,0,1,0,0,2,1,12
+Prom Yor Andaman,53.2,168.0,Thailand,26,Nokjeanladkrabang,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Promrob Looksuan,-1,170.0,Thailand,26,Looksuan,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Puengluang Baanramba,61.1,169.0,Thailand,25,Baanrambaa,Muay Thai,Male,Flyweight,7,5,0,0,0,0,4,0,0,0,0,0,0,12
+Punmongkol Sor Mongkolkarnchang,56.2,162.0,Thailand,29,Sor Mongkolkarnchang,Muay Thai,Male,Strawweight,1,1,0,0,0,0,0,1,0,0,0,0,0,2
+Punnya Sai,-1,178.0,Myanmar [Burma],26,Bali MMA,MMA,NA,Out of range,2,0,0,0,1,0,1,0,0,0,0,0,0,2
+Qiu “The Tank” Jianliang,65.8,172.0,China,35,Qiu Jianliang Kickboxing Sports Academy,Kickboxing,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Rabindra Dhant,-1,176.0,Nepal,26,Locknroll MMA Nepal,MMA,Male,Out of range,1,1,0,1,0,0,0,0,0,0,0,1,0,2
+Rachan Sor Somnuk,-1,165.0,Thailand,28,Sor Somnuk,Muay Thai,Male,Out of range,1,3,0,1,0,0,0,0,0,0,0,0,1,4
+Rafael “Indio” Nunes,70.3,181.0,Brazil,37,AC Fight & Fitness / Nova Uniao,MMA,Male,Featherweight,1,2,0,0,1,0,0,0,2,0,0,0,0,3
+Rafi Bohic,65.8,177.0,France,33,Singpatong Gym,Muay Thai,Male,Featherweight,1,3,1,0,0,0,0,1,0,0,0,2,0,5
+Raghvendra Singh,65.8,172.0,India,33,Team Prime Time,MMA,NA,Featherweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Rahil Baghirov,-1,170.0,Azerbaijan / Turkey,28,Galaktic Sports,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Rahul “The Kerala Krusher” Raju,76.3,185.0,India,34,Juggernaut Fight Club,MMA,Male,Lightweight,3,6,0,0,3,0,0,0,0,1,0,1,0,9
+Raimond Magomedaliev,83.9,185.0,Russia,35,Eagles MMA,MMA,Male,Welterweight,3,1,0,0,1,0,1,0,0,0,0,1,0,4
+Rak Erawan,-1,164.0,Thailand,24,Erawan,Muay Thai,Male,Out of range,5,4,0,2,0,0,1,0,0,0,0,3,0,9
+Raksaensuk Sor Tor Hiewbangsaen,55.5,173.0,Thailand,20,Siriluck Muaythai,Muay Thai,Male,Strawweight,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Raksiam Sor Boonmeerit,63.0,178.0,Thailand,22,Sor Boonmeerit,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ramadan “The Scorpion” Ondash,-1,168.0,Lebanon,18,Tiger Muay Thai,Muay Thai,Male,Out of range,3,0,0,0,0,0,2,0,0,0,0,0,0,3
+Ramazan Karimov,-1,182.0,Russia,23,One Chance / Skala Sports Club,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Ramazan Suleymanov,-1,175.0,Russia,23,Team Mehdi Zatout,MMA,Male,Out of range,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Rambo Mor Rattanabandit,-1,174.0,Thailand,34,Pet Por Tor Or gym,Muay Thai,Male,Out of range,0,3,0,0,0,0,0,0,0,0,0,2,0,3
+Rambolek Chor Ajalaboon,65.4,173.0,Thailand,22,Kiatpetch,Muay Thai,Male,Bantamweight,5,2,0,1,0,0,2,0,0,0,0,0,1,7
+Rambong Sor Therapat,57.8,160.0,Thailand,28,LookSuan MuayThai Camp,Muay Thai,Male,Flyweight,8,2,0,1,0,0,3,1,0,0,0,1,0,10
+Ramu Araya,61.1,175.0,Japan,24,Zero Gym,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ran Longshu,-1,157.0,China,19,Sheng Li Ren He,Kickboxing,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,2,0,2
+Rana Rudra “Ashwathama” Pratap Singh,61.2,175.0,India,28,Yogya,MMA,NA,Flyweight,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Ratchadej Sor Petjumrat,53.7,170.0,Thailand,23,TN Muay Thai gym,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Ratchamongkol Maethongbairecycle,53.1,167.0,Thailand,18,TK Yuthanna,Muay Thai,Male,Strawweight,1,1,0,0,0,0,1,0,0,0,0,1,0,2
+Reece “Lightning” McLaren,61.2,168.0,Australia,33,CMBT Training Centre,MMA,Male,Flyweight,11,6,0,1,5,0,1,3,0,0,0,3,2,17
+Reito Takazono,63.1,181.0,Japan,24,Bravely Gym,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Ren Ya Wei,70.3,177.0,China,27,Changsha Great Muay Thai Gym,Kickboxing,Male,Featherweight,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Renato Canuto,77.0,177.0,Brazil,-1,Checkmat / Hybrid Jiujitsu,Submission Grappling,Male,Lightweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Revo Sor Sommai,-1,170.0,Thailand,25,Sor Sommai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Reza Abasi,-1,170.0,Iran,30,Behzad Warrior Academy,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Reza “Jaguar” Saedi,65.4,178.0,Iran,25,Flipside / M.S. Gym,MMA,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Rhuam Felipe “Show” Morais Caldas,61.2,165.0,Brazil,26,Dream Fighters,Muay Thai,Male,Flyweight,2,2,0,1,0,0,0,1,0,0,0,2,0,4
+Riamu Matsumoto,-1,180.0,Japan,20,Zero Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ricardo Bravo,72.8,180.0,Argentina,25,Weerasackreck Fairtex Gym,Muay Thai,Male,Lightweight,3,2,0,0,0,0,0,0,0,0,0,2,0,5
+Riccardo Catindig-Stagg,-1,178.0,United Kingdom,32,Phuket Top Team,MMA,Male,Out of range,0,2,0,0,0,0,0,0,1,0,0,1,0,2
+Richard “The Wolf” Godoy,-1,180.0,Brazil,36,Looknongsaeg Muay Thai,MMA,Male,Out of range,1,1,0,0,0,0,0,1,1,0,0,0,0,2
+Riedzwan “Golden Shin” Norsyahmie,-1,172.0,Malaysia,23,66 Unicorn Muaythai Gym / S Inn Malay,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Rifdean Masdor,50.6,162.0,Malaysia,22,Sor Sommai,Muay Thai,Male,Atomweight,3,1,0,2,0,0,0,0,0,0,0,0,0,4
+Rikito,65.4,172.0,Japan,23,Prepared Gym,Kickboxing,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Rit Keawsamrit,-1,165.0,Thailand,34,Keawsamrit,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Ritnaka Or Bor Jor Nakhonpanom,-1,167.0,Thailand,23,Or Bor Jor Nakhonpanom gym,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Rittewada Petchyindee,65.8,180.0,Thailand,29,Petchyindee Academy,Muay Thai,Male,Featherweight,1,1,0,1,0,0,0,0,0,0,0,0,0,2
+Rittidet Sor Sommai,59.9,175.0,Thailand,27,3,Muay Thai,Male,Flyweight,4,4,0,0,0,0,1,0,2,0,0,1,0,8
+Ritu “The Indian Tigress” Phogat,52.1,156.0,India,31,Evolve MMA,MMA,Male,Atomweight,7,4,0,3,0,0,4,0,0,3,0,0,1,11
+River Daz,65.5,175.0,Australia,32,Fairtex Training Center,Muay Thai,Male,Bantamweight,1,2,0,0,0,0,1,0,0,0,0,1,1,3
+Roberto “Robocop” Soldic,83.6,180.0,Croatia,30,UFD Gym,MMA,Male,Welterweight,1,1,1,0,0,0,0,0,0,0,0,0,0,3
+Robin “The Ilonggo” Catalan,56.6,155.0,Philippines,34,Catalan Fighting System,MMA,Male,Strawweight,5,6,0,0,1,1,1,1,1,4,0,0,0,11
+Robocop Radgoldgym,-1,165.0,Thailand,25,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,1,2
+Robson “The Monkey King” de Oliveira,-1,163.0,Brazil,32,C88 Martial Arts,MMA,Male,Out of range,3,1,0,0,2,0,1,0,1,0,0,0,0,4
+Rockie Bactol,61.2,168.0,Philippines,26,Stray Cats Fight Team,MMA,Male,Flyweight,0,3,0,0,0,0,0,0,3,0,0,0,0,3
+Rocky Wor Wantawee,-1,169.0,Thailand,24,Wor Wantawee,Muay Thai,Male,Out of range,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Rodbenz PK Saenchai,50.4,168.0,Thailand,23,PK Saenchai Muaythaigym,Muay Thai,Male,Atomweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Rodlek PK Saenchai,65.8,168.0,Thailand,35,PK Saenchai Muaythaigym,Kickboxing,Male,Featherweight,4,3,0,0,0,0,3,0,0,0,0,1,0,7
+Rodrigo “Diguinho” Marello,65.6,175.0,Brazil,30,Evolve MMA,Submission Grappling,Male,Bantamweight,1,1,0,0,1,0,0,0,0,1,0,0,0,2
+Rolex Wor Panyawai,51.2,166.0,Thailand,22,Wor Panyawai,Muay Thai,Male,Atomweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Roman “Cobra” Popov,-1,170.0,Kyrgyzstan,24,Galaktic Sports / Phuket Fight Club,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Ronachai Tor Ramintra,-1,170.0,Thailand,27,Paeminburi,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Ruayjing Sor Wisetkit,61.1,165.0,Thailand,26,Sor Wisetkit,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Rudy Da Silva,-1,179.0,Scotland,18,Aberdeen Muay Thai / Wor Auracha,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Rui Botelho,61.2,170.0,Portugal,30,Dinamite Team,Kickboxing,Male,Flyweight,3,7,0,0,0,0,2,1,0,0,0,4,2,10
+Rui Kakizaki,54.8,165.0,Japan,19,Cross Point Oizumi,Kickboxing,Male,Strawweight,1,1,0,0,0,0,1,0,0,0,0,0,1,2
+Rungnarai Kiatmoo9,-1,166.0,Thailand,30,Kiatmoo9 Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,1,0,0,1
+Rungpet Petcharoen,-1,167.0,Thailand,31,Boxing Army 3,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Rungrawee “Legatron” Sitsongpeenong,76.0,180.0,Thailand,29,Sitsongpeenong,Muay Thai,Male,Lightweight,5,2,0,1,0,0,3,1,0,0,0,0,0,7
+Rungrot “Kong” Posi,56.7,170.0,Thailand,31,Bangkok Fight Lab,MMA,Male,Flyweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Rungsangtawan Sor Parrat,-1,174.0,Thailand,31,Sor Parrat,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Rusi Hadzhiev,70.3,180.0,Bulgaria,22,Flipside / Guedjev BJJ Gym,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ruslan Arslangereev,-1,184.0,Turkey,26,Flipside / Kimura BJJ Türkiye,MMA,Male,Out of range,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Ruslan Bagdasarian,65.0,168.0,Russia,32,UMMC Sambo Club,Submission Grappling,Male,Bantamweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Ruslan “Snow Leopard” Emilbek Uulu,83.3,180.0,Kyrgyzstan,34,Ak-Bars Team,MMA,Male,Welterweight,3,2,0,0,1,0,1,1,1,0,0,0,0,5
+Ruslan Satiev,-1,170.0,Russia,26,Dobrynya / KHK Dagestan,MMA,Male,Out of range,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Rustam “Tomahawk” Yunusov,60.9,173.0,Russia,18,Sinbi Muaythai / Tomahawk Kamilov Team,Muay Thai,Male,Flyweight,4,0,0,0,0,0,2,0,0,0,0,0,0,4
+Ryogo “Kaitai” Takahashi,70.1,170.0,Japan,36,Krazy Bee,MMA,Male,Featherweight,2,4,0,1,0,0,0,0,0,0,0,0,2,6
+Ryohei Igado,64.5,178.0,Japan,30,Stage Kickboxing Gym,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ryoji Kudo,70.3,170.0,Japan,32,Tribe Tokyo MMA,MMA,Male,Featherweight,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+Ryosuke Honda,-1,165.0,Japan,34,Tiger Muay Thai,MMA,Male,Out of range,2,2,0,0,0,0,2,0,1,0,0,1,0,4
+Ryosuke Noda,-1,162.0,Japan,29,Alliance,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Ryota Hashimoto,-1,173.0,Japan,35,Next Level Gym,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Ryota Koshimizu,-1,175.0,Japan,26,King Leo,Muay Thai,Male,Out of range,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Ryugo Takeuchi,-1,187.0,Japan,22,King Gym,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Ryuichi Yamashita,77.1,185.0,Japan,26,BRAVE Gym,MMA,NA,Lightweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Ryuki Kawano,55.1,167.0,Japan,18,Cross Point Kichijoji,Kickboxing,Male,Strawweight,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+“Notorious Tyrant” Ryusei,65.77,173.0,Japan,24,BRAID,Kickboxing,Male,Featherweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Ryuto Oinuma,53.5,161.0,Japan,26,Struggle Gym,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Ryuto “Dragon Boy” Sawada,56.3,155.0,Japan,29,Evolve MMA,MMA,Male,Strawweight,3,4,0,0,2,0,1,0,1,0,0,3,0,7
+Ryuya Hatakeyama,-1,167.0,Japan,28,The Black Belt Japan,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sa Soe Thiha,51.8,160.0,Myanmar [Burma],24,Family Muay Thai,Muay Thai,Male,Atomweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sadegh “Kurdish Warrior” Ghasemi,-1,178.0,Iran,24,Phuket Fight Club,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Saemapetch Fairtex,65.8,172.0,Thailand,30,Fairtex Training Center,Muay Thai,Male,Featherweight,9,8,0,1,0,0,3,0,4,0,0,0,0,17
+Saenchai Nayokwittungsong,56.6,170.0,Thailand,19,Petsimuen,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Saenphon Sor Sommai,-1,178.0,Thailand,29,TBM Gym,Muay Thai,Male,Out of range,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+Sagaengarm Jitmuangnon,50.9,165.0,Thailand,24,Jitmuangnon Gym,Muay Thai,Male,Atomweight,2,3,0,1,0,0,0,0,0,0,0,3,0,5
+Saharat “Bang” Khongsawat,61.2,172.0,Thailand,27,DNA Thailand,MMA,Male,Flyweight,1,1,0,1,0,0,0,0,1,0,0,0,0,2
+Sai “The Karate Kid” Nyan Lin,61.2,172.0,Myanmar [Burma],31,Team Phoe Thaw,MMA,Male,Flyweight,2,0,0,0,2,0,0,0,0,0,0,0,0,2
+Sainatee PK Saenchai,50.8,165.0,Thailand,23,PK Saenchai Muaythaigym,Muay Thai,Male,Atomweight,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Sajad “The Iranian Superman” Sattari,-1,178.0,Iran,23,Team Mehdi Zatout,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Sakchainoi M U Den,59.4,175.0,Thailand,30,FA Group,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sagetdao “Deadly Star” Petpayathai,70.3,175.0,Thailand,38,Evolve MMA,Muay Thai,Male,Featherweight,4,1,0,2,0,0,1,0,0,0,0,1,0,5
+Saklek Kiatsongrit,-1,168.0,Thailand,22,Kiatsongrit,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sakolpat ChotBangsaen,-1,160.0,Thailand,25,Chonburi Art Muay Thai,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,0,2
+Saksit “Crush Man” Janhom,65.8,172.0,Thailand,28,Wildcard MMA,MMA,NA,Featherweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Saksri Superlek Muaythai,62.7,170.0,Thailand,24,Superlek Muaythai,Muay Thai,Male,Bantamweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Salamat “SWAT” Orozakunov,-1,182.0,Kyrgyzstan,35,Universal Team,MMA,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Sam-A Gaiyanghadao,56.7,168.0,Thailand,41,Evolve MMA,Kickboxing,Male,Flyweight,9,4,0,2,0,0,3,0,0,0,0,2,0,13
+Samanchai Sor Sommai,56.2,169.0,Thailand,25,Sor Sommai,Muay Thai,Male,Strawweight,2,0,0,0,0,0,1,0,0,0,0,0,0,2
+Samat Mamedov,77.11,180.0,Kazakhstan,26,0,MMA,Male,Welterweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Samingdam Chor Ajalaboon,-1,175.0,Thailand,26,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,3,0,0,0,0,0,2,0,0,0,0,0,0,3
+Samingdam NF Looksuan,-1,165.0,Thailand,23,Looksuan,Muay Thai,Male,Out of range,6,3,0,1,0,0,3,0,1,0,0,1,1,9
+Samingnum M Ekachart,65.8,183.0,Thailand,19,Singpatong,Muay Thai,Male,Featherweight,1,1,0,1,0,0,0,0,0,0,0,0,0,2
+Samoynoi Tor Phusuwan,61.2,170.0,Myanmar [Burma],25,Kiatchatchai,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Samransing Sitchalongsak,-1,173.0,Thailand,21,Sak Buriram,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Samuel Bielen,-1,172.0,Belgium,25,Team Mehdi Zatout,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Samuel Toscano,-1,179.0,Italy,36,Sitjemam,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Samurai Seeopal,-1,170.0,Thailand,20,Seeopal,Muay Thai,Male,Out of range,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Samy “AK47” Sana,70.3,190.0,Algeria / France,36,Phenix Muay Thai Paris / Venum Training Camp Thailand,Kickboxing,Male,Featherweight,3,5,0,0,0,0,2,0,0,0,0,4,0,8
+Sandeep Gurung,56.7,166.0,Nepal,32,All Martial Arts Academy,MMA,Male,Flyweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Sangarthit Looksaikongdin,-1,-1.0,Thailand,1,0,Kickboxing,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Sangsakda BoyTarchang,-1,158.0,Thailand,19,BoyTarchang,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sanlang Gexi,56.4,168.0,China,26,Enbo Gedou,MMA,Male,Strawweight,0,2,0,0,0,0,0,0,0,0,0,0,1,2
+Sanpet Sor Salacheep,58.8,173.0,Thailand,25,Sor Salacheep,Muay Thai,Male,Flyweight,3,2,0,0,0,0,2,0,0,0,0,0,1,5
+Sanya “Tossakan” Kongkatonk,-1,159.0,Thailand,47,Wildcard MMA,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Sanzhar “Tornado” Zakirov,52.16,170.0,Uzbekistan,22,Khaturaev Team,MMA,Male,Strawweight,6,0,0,2,0,0,3,0,0,0,0,0,0,6
+Saorattana Sitkrujeab,-1,164.0,Thailand,24,Sitkrujeab,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Sardor “Golden” Karimboev,-1,170.0,Uzbekistan,20,Kxanturaev Team,MMA,Male,Out of range,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Satangthong Chor Hapayak,-1,173.0,Thailand,18,Chor Hapayak,Muay Thai,Male,Out of range,2,0,0,0,0,0,0,1,0,0,0,0,0,2
+Satoshi Katashima,55.1,163.0,Japan,34,Kick Life,Muay Thai,Male,Strawweight,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Savvas Michael “The Baby Face Killer”,60.9,178.0,Cyprus,26,Petchyindee Academy,Muay Thai,Male,Flyweight,2,3,0,0,0,0,2,0,1,0,0,1,0,5
+Saw Min Min,61.2,170.0,Myanmar [Burma],26,T&T Thaton,Muay Thai,Male,Flyweight,3,1,0,0,1,0,0,0,0,0,0,0,1,4
+Sean “Clubber” Clancy,65.8,176.0,Ireland,36,Siam Warrior Ireland / Yodyut Muay Thai Thailand,Muay Thai,Male,Featherweight,0,3,0,0,0,0,0,0,1,0,0,1,0,3
+Sean Climaco,61.0,170.0,Philippines / United States,31,Smash Fighter / Woodenman Muay Thai,Muay Thai,Male,Flyweight,2,2,0,0,0,0,0,1,1,0,0,1,0,4
+Sein Lone Chaw,-1,163.0,Myanmar [Burma],25,Top One,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Seiya Matsuda,73.3,173.0,Japan,29,Blue Dog Gym,MMA,Male,Lightweight,3,1,0,0,1,0,1,1,0,1,0,0,0,4
+Seksan Fairtex,60.8,165.0,Thailand,24,1,Muay Thai,Male,Flyweight,4,3,0,0,0,0,2,0,0,0,0,3,0,7
+Seksan “The Man Who Yields To No One” Or Kwanmuang,-1,170.0,Thailand,36,Or. Kwanmuang,Muay Thai,Male,Out of range,10,2,0,2,0,0,5,2,1,0,0,1,0,12
+Senzo Ikeda,56.1,173.0,Japan,43,Paraestra Matsudo,MMA,Male,Strawweight,3,2,0,1,0,0,1,0,1,0,0,1,0,5
+Ham “Hamzzang” Seo Hee,51.9,157.0,South Korea,38,Team Mad,MMA,Male,Atomweight,3,1,0,0,0,0,2,1,1,0,0,0,0,4
+Seung Hyun “The Sniper” Cho,61.2,175.0,South Korea,-1,5 Y,MMA,NA,Flyweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Sevket “Turkish Assassin” Cerkez,-1,172.0,Turkey,38,Knowlesy Academy,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Seyedali “Iranian Zombie” Asli,-1,180.0,Iran,27,IRIC TEAM,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+“The Southern Yi” Sha Nidu,56.7,170.0,China,28,Yunnan Kunil Fight Club,MMA,Male,Flyweight,0,2,0,0,0,0,0,0,1,1,0,0,0,2
+Shadow Singha Mawynn,70.2,179.0,Thailand,25,Singha Mawynn,Muay Thai,Male,Featherweight,5,1,0,1,0,0,3,0,0,0,0,1,0,6
+Shahzaib “King” Rindh,70.3,179.0,Pakistan,27,Red Dragon / Wilson Wushu Academy,Kickboxing,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Shakhriyor Jurayev,63.5,171.0,Uzbekistan,24,Shakhriyor Sport Club / TC Muaythai,Muay Thai,Male,Bantamweight,1,3,0,0,0,0,0,0,0,0,0,3,0,4
+Shakir Al-Tekreeti,76.8,186.0,Iraq,28,Al Nagde Team,Kickboxing,Male,Lightweight,1,2,0,0,0,0,1,0,1,0,0,0,0,3
+Shamil Adukhov,-1,181.0,Russia,23,Profi-Sport,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Shamil Erdogan,83.91,189.0,Turkey,34,Kremost Fight Club,MMA,Male,Middleweight,4,0,0,2,0,0,0,0,0,0,0,0,0,4
+Shamil “The Cobra” Gasanov,70.0,171.0,Russia,29,Peresvet Fight Team / Tiger Muay Thai,MMA,Male,Featherweight,5,1,0,0,1,0,4,0,0,1,0,0,0,6
+Shammah Chandran,65.8,176.0,Malaysia,36,Marcos Escobar BJJ,MMA,NA,Featherweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+“Wind-Chasing Boy” Shang Xi Feng,70.3,176.0,China,27,Shan Yuan Fight Club,Kickboxing,Male,Featherweight,1,2,0,0,0,0,0,1,0,0,0,1,0,3
+Shannon “OneShin” Wiratchai,70.3,175.0,Thailand,36,Bangkok Fight Lab / Tiger Muay Thai,MMA,Male,Featherweight,9,6,1,2,1,0,0,2,1,1,0,3,1,16
+Sharif Mazoriev,61.0,170.0,Russia,26,KAO SIB SAM Phuket Gym,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Shazada Ataev,-1,177.0,Turkmenistan,27,Basabas Sowes Merkezi,MMA,Male,Out of range,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+“Dangerous” Sheagh Dobbin,76.8,188.0,Ireland,28,Royal Fight Club,MMA,Male,Lightweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Sheng Yi Yang,-1,173.0,China,17,Sheng Li Ren He,Kickboxing,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Sherif “The Shark” Mohamed,83.9,177.0,Egypt,42,The Shark Gym,MMA,Male,Welterweight,0,4,0,0,0,0,0,0,1,0,0,2,0,4
+Sherzod “Lion” Kabutov,61.1,172.0,Kyrgyzstan,26,Venum Training Camp,Kickboxing,Male,Flyweight,1,5,0,0,0,0,1,0,0,0,0,3,2,6
+Shiga Masahiro,-1,169.0,Japan,32,S Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Shimamura “Retsumi Ichikiba” Naoki,74.0,168.0,Japan,33,Oota Dojo,MMA,Male,Lightweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Shimon Yoshinari,-1,178.0,Japan,20,Eiwa Sports Gym,Muay Thai,Male,Out of range,2,0,0,1,0,0,1,0,0,0,0,0,0,2
+Shin “Checkmate” Dong Hyun,63.0,175.0,South Korea,28,Team Danger,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Shinechagtga Zoltsetseg,65.5,175.0,Mongolia,28,Zorky MMA,MMA,Male,Bantamweight,5,3,0,2,0,0,1,1,1,1,1,0,0,8
+Shingo Shibata,-1,184.0,Japan,29,Kiatsongrit,Muay Thai,Male,Out of range,1,3,0,0,0,0,0,1,2,0,0,1,0,4
+Shinji Suzuki,65.3,174.0,Japan,39,Fujimakick Muay Thai Gym,Muay Thai,Male,Bantamweight,1,2,0,0,0,0,1,0,1,0,0,0,0,3
+Shinya “Tobikan Judan” Aoki,75.3,180.0,Japan,42,Evolve MMA,MMA,Male,Lightweight,15,9,0,1,12,0,2,0,5,3,0,1,0,24
+Shir Cohen,47.63,158.0,Israel,24,1,Muay Thai,Male,Atomweight,3,0,0,1,0,0,2,0,0,0,0,0,0,3
+Sho Ogawa,63.2,172.0,Japan,32,Oishi Gym,Muay Thai,Male,Bantamweight,0,3,0,0,0,0,0,0,0,0,0,2,0,3
+Shoa Arii,55.0,168.0,Japan,24,Oikawa Dojo,MMA,NA,Strawweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Shogo Kuriaki,59.5,170.0,Japan,30,Weerasackreck Fairtex Gym,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Shoko Sato,65.3,175.0,Japan,37,Fight Base Toritsudai / Sakaguchi Dojo,MMA,Male,Bantamweight,4,2,0,2,1,0,1,0,0,0,0,2,0,6
+Shota Tezuka,-1,175.0,Japan,23,Gong Gym,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Shoya Ishiguro,-1,167.0,Japan,28,Carpediem,Submission Grappling,Male,Out of range,3,1,0,0,1,0,2,0,0,1,0,0,0,4
+Shuri Sakayori,-1,166.0,Japan,23,Try Hard Gym,Kickboxing,Male,Out of range,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Shuto Sato,52.6,163.0,Thailand,27,Grappling Shootboxers Japan,Muay Thai,Male,Strawweight,0,2,0,0,0,0,0,0,0,0,0,0,0,2
+Shuya “Stealth” Kamikubo,65.8,165.0,Japan,31,Itadaki Jiu-Jitsu / TRY H Studio,MMA,Male,Featherweight,6,0,0,1,2,0,3,0,0,0,0,0,0,6
+Sibmuen “Coach Nay”,-1,178.0,Thailand,30,Coach Nay Sibmuen Gym,Muay Thai,Male,Out of range,0,3,0,0,0,0,0,0,0,0,0,0,1,3
+Sibsan Nokkhao KorMor11,62.3,170.0,Thailand,30,Nokkhao Kor Mor 11,Muay Thai,Male,Bantamweight,4,1,0,0,0,0,1,2,0,0,0,1,0,5
+Silangern Lanna Waterside,57.6,173.0,Thailand,22,Lanna Waterside,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Silapet Por Petkaikaew,-1,169.0,Thailand,19,Por Petchkaikaew,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Silviu “Hitman” Vitez,60.2,171.0,Romania,31,MFC Noia / Sityodtong,Muay Thai,Male,Flyweight,2,6,0,1,0,0,1,0,3,0,0,3,0,8
+Simon Carson,105.5,183.0,Australia,48,Absolute MMA Melbourne,MMA,Male,Heavyweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Sing Sor Chokmeechai,-1,170.0,Thailand,21,Sor Chokmeechai,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,1,2
+Singdam Kafefocus,-1,169.0,Thailand,22,Sor Jor Lekmuangnon,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Singdomthong Nokjeanladkrabang,57.3,175.0,Thailand,25,Nokjeanladkrabang,Muay Thai,Male,Flyweight,6,2,0,0,0,0,3,1,0,0,0,0,1,8
+Singmanee Surasakmontri,-1,168.0,Thailand,25,Surasakmontri,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Singsangpa Lookboonmee,55.2,168.0,Thailand,19,Lookboonmee,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Singtanawat Nokjeanladkrabang,-1,167.0,Thailand,27,Nokjeanladkrabang,Muay Thai,Male,Out of range,2,2,0,1,0,0,1,0,1,0,0,1,0,4
+SingUbon Or AudUdon,59.5,180.0,Japan,20,AudUdon,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Singudon Detpetsithong,60.4,171.0,Thailand,25,Detpetsithong,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Sinsamut Klinmee,75.5,182.0,Thailand,29,Venum Training Camp,Kickboxing,Male,Lightweight,5,5,0,2,0,0,1,0,0,0,0,1,1,10
+Sirichok Sor Sommai,-1,168.0,Thailand,22,Sor Sommai,Muay Thai,Male,Out of range,2,0,0,0,0,0,0,1,0,0,0,0,0,2
+Sirvan Amini,55.3,167.0,Iran,26,Muay Thai Academy MTA,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Sitrak Por Paidang,51.1,163.0,Thailand,19,Por Paidang,Muay Thai,Male,Atomweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Sitthichai “Killer Kid” Sitsongpeenong,70.3,174.0,Thailand,33,Sitsongpeenong Muay Thai Camp,Muay Thai,Male,Featherweight,6,6,0,0,0,0,4,2,0,0,0,4,0,12
+Sitthichai Sor Dechapan,-1,173.0,Thailand,20,Sor Dechapan,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Siwakorn PK Saenchai,63.0,170.0,Thailand,25,PK Saenchai Muaythaigym,Muay Thai,Male,Bantamweight,2,1,0,0,0,0,2,0,0,0,0,0,1,3
+Slatan Jitmuangnon,-1,167.0,Thailand,26,Jitmuangnon Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+So Yul Kim,52.2,158.0,South Korea,30,MOB Training Center,MMA,Male,Strawweight,4,0,0,0,2,0,2,0,0,0,0,0,0,4
+Soe “Man of Steel” Lin Oo,65.5,171.0,Myanmar [Burma],33,Doe Yoe Yar Lethwei Club,Muay Thai,Male,Bantamweight,3,3,0,1,0,0,0,0,0,0,0,3,0,6
+Soichiro Arata,-1,179.0,Japan,29,Cross Point Kichijoji,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Soner “Golden Boy” Sen,-1,178.0,Turkey,28,Team Mehdi Zatout,Muay Thai,Male,Out of range,6,3,0,1,0,0,2,0,0,0,0,2,0,9
+“The Star” Song Dong Dong,61.2,174.0,China,28,Beijing Taobo Fight Club,Kickboxing,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+“The Little Whirlwind” Song Xu Kui,63.0,176.0,China,35,Luoyang Tiquanzhixing Fight Club / Shunyuan Fight Club,Kickboxing,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Songchainoi Kiatsongrit,-1,156.0,24 Y,-1,Kiatsongrit Muay Thai Gym,Muay Thai,Male,Out of range,9,0,0,0,0,0,5,0,0,0,0,0,0,9
+Songfangkhong FA Group,60.1,170.0,Thailand,22,FA Group,Muay Thai,Male,Flyweight,2,4,0,1,0,0,1,0,0,0,0,1,1,6
+Songpandin Chor Kaewwiset,56.4,169.0,Laos,18,Chor Kaeweiset,Muay Thai,Male,Strawweight,2,2,0,0,0,0,2,0,0,0,0,1,0,4
+Songpayak JP Power,-1,175.0,Thailand,17,JP Mansion Muay Thai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sonrak Fairtex,-1,170.0,Myanmar [Burma],28,Fairtex Training Center,Muay Thai,Male,Out of range,7,5,0,0,0,0,4,0,0,0,0,2,1,12
+Sornsueknoi FA Group,57.9,165.0,Thailand,30,FA Group,Muay Thai,Male,Flyweight,5,2,0,1,0,0,1,1,0,0,0,1,0,7
+Soroush Akbari,-1,171.0,Iran,20,Cyrus,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Sovannahry “The Sweet Savage” Em,61.2,164.0,Cambodia / United States,32,Modern Martial Arts and Fitness,MMA,Male,Flyweight,2,1,0,2,0,0,0,0,0,1,0,0,0,3
+Stefan Korodi,65.8,174.0,Ireland,31,Dublin Combat Academy / PK Saenchai Muaythaigym,Muay Thai,Male,Featherweight,1,2,0,0,0,0,1,0,0,0,0,1,0,3
+Stefer “The Lion” Rahardian,56.7,169.0,Indonesia,38,Bali MMA,MMA,Male,Flyweight,6,4,0,0,2,0,4,0,0,1,0,3,0,10
+Stella Hemetsberger,56.1,170.0,Austria,26,RS-GYM,Muay Thai,Male,Strawweight,3,0,0,0,0,0,2,0,0,0,0,0,0,3
+Stephen “El Matador” Irvine,-1,170.0,Scotland,24,Deachkalek Muay Thai Academy,Muay Thai,Male,Out of range,6,1,0,1,0,0,3,0,0,0,0,0,0,7
+Suablack Tor Pran49,65.8,170.0,Thailand,28,Tor Pran49,Muay Thai,Male,Featherweight,6,3,0,1,0,0,2,0,0,0,0,1,0,9
+Suajan Sor Isarachot,53.8,172.0,Thailand,18,Suajan Tok Ban Muay Thai,Muay Thai,Male,Strawweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Suakim Sor Jor Tongprajin,63.2,175.0,Thailand,29,Sor Jor Thongprajin,Muay Thai,Male,Bantamweight,5,2,0,1,0,0,0,0,0,0,0,0,0,7
+Suayai Chor.Haapayak,-1,156.0,Thailand,32,Chor Haapayak,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sueakhao Sor Naruemon,-1,174.0,Thailand,19,Sor Sommai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Suesat Manop Gym,56.4,167.0,Thailand,31,Manop Gym,Muay Thai,Male,Strawweight,1,2,0,0,0,0,0,0,0,0,0,2,0,3
+Suksawat PK Saenchai,-1,176.0,Thailand,24,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sulaiman Looksuan,60.1,165.0,Myanmar [Burma],22,1,Muay Thai,Male,Flyweight,4,3,0,1,0,0,2,0,0,0,0,0,0,7
+Suleyman “Sultan” Suleymanov,-1,177.0,Azerbaijan,32,Dobrynya,MMA,Male,Out of range,1,1,0,0,1,0,0,0,0,0,0,1,0,2
+Sumit “Eagle” Bhyan,-1,185.0,India,28,WarriorsCove MMA,MMA,Male,Out of range,1,2,0,0,0,0,0,1,2,0,0,0,0,3
+Sun Shu Wei,77.1,183.0,China,25,Sunkin International Fight Club,MMA,Male,Lightweight,1,2,0,0,1,0,0,0,1,0,0,1,0,3
+Sunday Boomdeksean,53.3,165.0,Thailand,28,Boomdeksean,Muay Thai,Male,Strawweight,3,2,0,1,0,0,1,0,0,0,0,1,0,5
+Sungprab Lookpichit,-1,156.0,Thailand,22,Lookpichit,Muay Thai,Male,Out of range,2,1,0,0,0,0,0,0,0,0,0,0,0,3
+Sunisa “Thunderstorm” Srisen,52.2,155.0,Thailand,24,Mister Kok Gym,MMA,Male,Strawweight,1,2,0,0,0,0,1,0,1,1,0,0,0,3
+“The Terminator” Sunoto,65.8,175.0,Indonesia,40,Predator MMA,MMA,Male,Featherweight,10,7,1,2,3,0,5,0,3,2,0,1,0,18
+Sunvo TDed99,-1,170.0,Thailand,22,TDed99,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Supalek Jitmuangnon,-1,175.0,Thailand,21,Jitmuangnon Gym,Muay Thai,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Super “The Super One” Yay Chan,63.8,165.0,Myanmar [Burma],20,900 Ton Cement Factory,Muay Thai,Male,Bantamweight,1,3,0,0,0,0,0,0,0,0,0,2,1,4
+Superball Wankhongohm MBK,-1,174.0,Thailand,28,TDed99,Muay Thai,Male,Out of range,3,2,0,0,0,0,3,0,0,0,0,0,0,5
+Superchub Bang Saen Fight Club,61.6,174.0,Thailand,21,Bangsaen Fight Club,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Superjeng Tded99,-1,170.0,Thailand,20,TDed99,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Superman Or AudUdon,54.0,167.0,Thailand,19,Or AudUdon,Muay Thai,Male,Strawweight,1,1,0,0,0,0,1,0,1,0,0,0,0,2
+Suphachailek Nengsubyai,-1,175.0,Thailand,21,Saangmorakot,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Surachai Sor Sommai,-1,173.0,Thailand,34,Sor Sommai,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,2,0,2
+Suriyanlek Por Yenying,-1,160.0,Thailand,28,Sangtiennoi Gym,Kickboxing,Male,Out of range,7,4,0,1,0,0,1,0,0,0,0,4,0,11
+Susuek TC Muaythai,-1,168.0,Thailand,24,TC Muaythai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Sutin Rinnmuaythai,64.4,175.0,Thailand,28,Rinn Muaythai,Muay Thai,Male,Bantamweight,1,0,0,0,0,0,0,1,0,0,0,0,0,1
+Suwatlek TDed99,-1,168.0,Thailand,25,TDed99,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Tae Ho “Bak” Bak,61.2,176.0,South Korea,30,10th Planet Jiu Jitsu Korea,MMA,Male,Flyweight,0,3,0,0,0,0,0,0,1,2,0,0,0,3
+“Samingpri” Tagir Khalilov,61.1,172.0,Azerbaijan / Russia,32,Archangel Michel / Samingpri Muay Thai Gym,Muay Thai,Male,Flyweight,4,5,0,1,0,0,1,1,1,0,0,2,1,9
+Tahaneak Nayokatasala,53.5,163.0,Thailand,23,Sor Chokmeechai,Muay Thai,Male,Strawweight,4,1,0,1,0,0,0,2,0,0,0,1,0,5
+Tai Sor Jor Piek Uthai,61.3,168.0,Thailand,24,Sor Jor PiekUthai gym,Muay Thai,Male,Bantamweight,0,3,0,0,0,0,0,0,0,0,0,0,0,3
+Taiki “Silent Sniper” Naito,60.8,172.0,Japan,29,Bell Wood Fight Team,Muay Thai,Male,Flyweight,8,6,0,1,0,0,5,1,0,0,0,5,0,14
+Takasuke “Hawk” Kume,77.1,172.0,Japan,40,ALIVE,MMA,Male,Lightweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Takeharu Ogawa,70.31,175.0,Japan,33,God Side Gym,MMA,Male,Lightweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Takeru “Natural Born Krusher” Segawa,61.1,168.0,Japan,33,Team Vasileus,Kickboxing,Male,Flyweight,1,2,0,0,0,0,0,0,0,0,0,1,0,3
+Taku Kondo,61.4,174.0,Japan,30,Sports24,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Takuma Ota,59.6,173.0,Japan,26,Shinkoh Muay Thai Gym,Muay Thai,Male,Flyweight,3,1,0,0,0,0,2,0,0,0,0,0,1,4
+Takuya Nagata,77.6,176.0,Japan,30,Shooto Gym Blows,MMA,Male,Welterweight,1,1,0,1,0,0,0,0,0,1,0,0,0,2
+Talekh Gamidov,-1,170.0,Azerbaijan,33,Fight Club Steel,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Tammi Musumeci,55.9,165.0,United States,30,Pedigo Submission Fighting,Grappling,Male,Strawweight,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+Tanachart Por Patcharawat,60.8,163.0,Thailand,23,Por Patcharawat,Muay Thai,Male,Flyweight,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Tang Qiqin,-1,165.0,China,21,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,2,0,2
+Tangtang Suansunandhagym,51.9,155.0,Thailand,21,Sor Dechapan,Muay Thai,Male,Atomweight,2,0,0,0,0,0,2,0,0,0,0,0,0,2
+Tapaokaew Singha Mawynn,-1,175.0,Thailand,23,Singha Mawyn,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,0,1,2
+Tasiken Jumatai,56.7,168.0,China,26,Haoyue Fight Club,MMA,Male,Flyweight,0,2,0,0,0,0,0,0,1,0,0,0,0,2
+Tasuku Yonekawa,-1,174.0,Japan,25,Yonekawa Dojo,Kickboxing,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Tatsumitsu “The Sweeper” Wada,61.0,170.0,Japan,36,2,MMA,Male,Flyweight,6,6,0,0,2,0,4,0,0,0,0,4,2,12
+Tawanchai VK Khaoyai,55.7,165.0,Thailand,17,Sor Siriluck,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Taylor “Tay-Tay” McClatchie,-1,168.0,Canada,33,613 Fight Factory,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Teeyai PK Saenchai,56.3,165.0,Thailand,24,PK Saenchai Muaythaigym,Muay Thai,Male,Strawweight,5,3,0,1,0,0,2,0,0,0,0,1,1,8
+Teeyai Wankhongohm MBK,52.5,165.0,Thailand,27,2,Muay Thai,Male,Strawweight,2,1,0,0,0,0,0,0,0,0,0,1,0,3
+Temirlan Bekmurzaev,-1,167.0,Russia,27,Team Mehdi Zatout,Kickboxing,Male,Out of range,2,3,0,1,0,0,1,0,0,0,0,2,0,5
+Tengnueng Fairtex,-1,178.0,Thailand,32,Fairtex Training Center,Muay Thai,Male,Out of range,1,0,1,0,0,0,0,0,0,0,0,0,0,2
+Teodora Kirilova,-1,160.0,Bulgaria,34,0,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Tetsuya “MMA Fantasista” Yamada,70.3,180.0,Japan,35,Tiger Muay Thai / Y&K MMA Academy,MMA,Male,Featherweight,3,4,0,1,2,0,0,0,1,1,0,2,0,7
+Thailandlek Sor Rungsak,-1,173.0,Thailand,18,Sor Rungsak,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,0,2
+Thales “The Lion Dog” Nakassu,62.1,176.0,Brazil,35,Evolve MMA,MMA,Male,Bantamweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Thant Zin,62.1,170.0,Myanmar [Burma],20,Taw Win Ayeyar Club,Muay Thai,Male,Bantamweight,2,2,0,1,0,0,0,0,1,0,0,0,0,4
+Thanungern FA Group,63.6,170.0,Thailand,27,FA Group,Muay Thai,Male,Bantamweight,0,3,0,0,0,0,0,0,1,0,0,1,0,3
+Thapluang Petkiatpet,55.5,168.0,Thailand,18,Or Muangchumphae,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Theeradet Chor Hapayak,-1,175.0,Thailand,26,Chor Hapayak,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,1,0,2
+Theptaksin Sor Sornsing,59.3,173.0,Thailand,27,Lionheart Muaythai,Muay Thai,Male,Flyweight,5,3,0,0,0,0,3,2,0,0,0,2,0,8
+Thet Paing Aung,-1,165.0,Myanmar [Burma],25,Taung Ka Lay,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Thomas Van Nijnatten,-1,175.0,France,25,Singpatong / Sitnumnoi Muay Thai Gym,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Thongpoon PK Saenchai,55.3,163.0,Thailand,27,PK Saenchai Muaythaigym,Muay Thai,Male,Strawweight,5,3,1,2,0,0,0,1,0,0,0,2,0,9
+Thongsiam Lukjaoporongtom,-1,175.0,Thailand,23,Kiatsongrit,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,1,2
+Thuanthong Sor Sommai,-1,165.0,Thailand,24,Sor Sommai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Thway Lin Htet,56.4,169.0,Myanmar [Burma],22,Daw Na Taung Chay,Muay Thai,Male,Strawweight,4,1,0,0,0,0,1,0,0,0,0,1,0,5
+Thway Thit Win Hlaing,70.5,171.0,Myanmar [Burma],30,Family Wan Chai,Muay Thai,Male,Lightweight,0,2,0,0,0,0,0,0,0,0,0,2,0,2
+“The Dragon Leg” Tial Thang,65.8,176.0,Myanmar [Burma],31,Sanford MMA,MMA,Male,Featherweight,3,2,1,1,0,0,2,0,0,1,0,1,0,6
+Tienngam Nakbinalaiyon,-1,167.0,Thailand,23,Nakbinalaiyon,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Tiffany “No Chill” Teo,51.8,165.0,Singapore,35,Matrix MMA,MMA,Male,Atomweight,8,2,0,1,4,0,3,0,1,0,0,1,0,10
+Timofey Nastyukhin,77.1,177.0,Russia,35,Raty Team,MMA,Male,Lightweight,7,7,0,2,0,0,3,0,4,1,0,0,0,14
+Timur Chuikov,-1,168.0,Kyrgyzstan,22,Tiger Muay Thai,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,1,0,0,1,0,2
+“Majin” Title Chai,70.3,177.0,Thailand,30,Team Mehdi Zatout,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Tomioka Yusei,-1,175.0,Japan,19,Formed Gym,Muay Thai,Male,Out of range,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Tommy Langaker,76.8,178.0,Norway,31,Wulfing Academy,Submission Grappling,Male,Lightweight,2,3,0,0,1,0,1,0,0,0,0,3,0,5
+Tomoki Sato,-1,178.0,Japan,33,Tiger Muay Thai,Muay Thai,Male,Out of range,2,2,0,0,0,0,1,0,1,0,0,1,0,4
+Tomorrow Kiatsongrit,-1,165.0,Thailand,23,Kiatsongrit,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Tomoshige Sera,76.4,169.0,Japan,35,Carpe Diem,Submission Grappling,Male,Lightweight,1,1,0,0,1,0,0,0,0,0,0,0,1,2
+Tomoya Maruyama,62.8,180.0,Japan,27,Buyuukai,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Tomyamkoong Bhumjaithai,-1,171.0,Thailand,21,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,1,2,0,0,0,0,1,0,0,0,0,0,0,3
+Tonglampoon FA Group,52.9,165.0,Thailand,21,FA Group,Muay Thai,Male,Strawweight,6,0,0,1,0,0,1,2,0,0,0,0,0,6
+Topgun Kor Kanluak,55.3,165.0,Thailand,23,Kiatsongrit,Muay Thai,Male,Strawweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Torepchi Dongak,56.7,168.0,Russia,25,3,MMA,Male,Flyweight,4,2,0,3,0,0,1,0,1,0,0,1,0,6
+Toreq,58.5,171.0,Indonesia,31,Bali MMA,MMA,Male,Flyweight,2,0,0,1,0,0,0,1,0,0,0,0,0,2
+Toshiyasu Sagae,-1,165.0,Japan,35,Imanari Jiujitsu,Submission Grappling,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Toufiq “Hurricane” Chabibi,62.6,176.0,Morocco,19,Tocayah Fight Club,Muay Thai,Male,Bantamweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Toyota Eaglemuaythai,-1,167.0,Thailand,24,Eagle Muay Thai,Muay Thai,Male,Out of range,3,0,0,1,0,0,0,0,0,0,0,0,0,3
+Tran “The Rabbit” Ngoc Luong,-1,165.0,Vietnam,32,Saigon Sports Club,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Tran “Tan Monster” Quang Loc,70.3,174.0,Vietnam,35,Liem Phong,MMA,Male,Featherweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+Trong Vinh Mui,-1,165.0,Vietnam,26,No.1 Muay Club,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+“Pretty Boy” Troy Worthen,68.5,170.0,United States,31,Sanford MMA,MMA,Male,Featherweight,3,3,0,2,0,0,1,0,0,1,0,1,0,6
+Tsukasa Mizoguchi,-1,170.0,Japan,22,Black Rose,MMA,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Tsz Ching Phoebe Lo,-1,159.0,Hong Kong SAR China,22,Superbon Training Camp,Kickboxing,Male,Out of range,1,2,0,0,0,0,1,0,0,0,0,2,0,3
+Tuan “Timebomb” Quoc Tran,68.0,170.0,Vietnam,29,Saigon Sports Club,Muay Thai,Male,Featherweight,1,1,0,1,0,0,0,0,1,0,0,0,0,2
+Tuangsap Sor Salacheep,58.0,169.0,Thailand,25,Tor Ittiporn,Muay Thai,Male,Flyweight,1,1,0,0,0,0,1,0,0,0,0,0,0,2
+Tuanthong Paesaisi,-1,167.0,Thailand,26,Por Petchkaikaew / SingAchawin,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Tubtimthong Sor Jor Lekmuangnon,-1,161.0,Thailand,24,2,Muay Thai,Male,Out of range,3,2,0,0,0,0,1,0,0,0,0,1,0,5
+Tun “The Phenom” Min Aung,-1,182.0,Myanmar [Burma],19,GCC Lethwei Club,Muay Thai,Male,Out of range,2,2,0,2,0,0,0,0,0,0,0,1,0,4
+Tural Askarov,70.1,178.0,Azerbaijan,27,Galaktic Sports,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Tyson “John Wayne Noi” Harrison,61.23,184.0,Australia,24,Sangtiennoi Muay Thai Gym,Muay Thai,Male,Bantamweight,3,3,0,0,0,0,0,1,1,0,0,1,1,6
+Uali Kurzhev,78.9,175.0,Russia,41,Kurzhev School,Submission Grappling,Male,Welterweight,0,2,0,0,0,0,0,0,0,2,0,0,0,2
+Ubaid “Bad” Hussain,-1,170.0,Pakistan / United Kingdom,19,Kiatphontip UK,Muay Thai,Male,Out of range,2,0,0,0,0,0,1,0,0,0,0,0,0,2
+Udomlek Nupranburi,58.0,169.0,Thailand,-1,Nupranburi,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Uzair Ismoiljonov,66.6,180.0,Uzbekistan,25,Team Mehdi Zatout,Kickboxing,Male,Featherweight,1,1,0,0,0,0,0,1,0,0,0,1,0,2
+Valerii “Hunter” Gusarov,-1,176.0,Russia,33,Lions MMA Club,MMA,Male,Out of range,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Valmir “Junior” Da Silva,82.7,173.0,Brazil,29,Blacks MMA,MMA,Male,Welterweight,1,3,0,0,1,0,0,0,0,2,0,0,0,4
+Valmir “Tatar Bullet” Galiev,60.9,174.0,Russia,26,Centr MMA,MMA,Male,Flyweight,1,1,0,0,0,0,0,0,0,1,0,0,0,2
+Vanessa Romanowski,-1,165.0,Poland / Sweden,20,Allstars Training Center / Rawai Muay Thai Khao Lak,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Vero “The Kayan Leopard”,-1,164.0,Myanmar [Burma],28,Tiger Muay Thai,Muay Thai,Male,Out of range,1,1,0,1,0,0,0,0,0,0,0,0,1,2
+Victor Hugo,-1,180.0,Brazil,28,Phuket Fight Club,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Victor “Leo” Pinto,65.8,173.0,France,31,Pinto Fight Studio,Muay Thai,Male,Featherweight,0,3,0,0,0,0,0,0,0,0,0,3,0,3
+Victor “The Lumberjack” Teixeira,70.7,181.0,Brazil,28,Singpatong,Muay Thai,Male,Lightweight,1,1,0,0,0,0,0,0,1,0,0,0,0,2
+Victoria Lee,52.2,166.0,Singapore / United States,-1,Evolve MMA / United MMA,MMA,Male,Strawweight,3,0,0,1,2,0,0,0,0,0,0,0,0,3
+Victoria “Vick” Souza,47.63,152.0,Brazil,27,Ataque Duplo / Chute Boxe Floripa,MMA,Male,Atomweight,3,2,0,0,1,0,2,0,1,0,0,1,0,5
+Viet Anh Do,61.2,163.0,New Zealand / Vietnam,28,Auckland MMA,MMA,Male,Flyweight,2,0,0,1,0,0,0,0,0,0,0,0,0,2
+View Petkosol,-1,172.0,Thailand,25,Kiatpetch,Kickboxing,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Vladimir Gabov,-1,178.0,Russia,27,Fight club Siam / Kuzbass Muaythai team,Muay Thai,Male,Out of range,0,2,0,0,0,0,0,0,0,0,0,2,0,2
+Vladimir Kanunnikov,-1,180.0,Russia,32,Team Strela,MMA,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Vladimir Kuchmistyi,76.2,176.0,Russia,35,Fairtex Training Center / Strela Team,Submission Grappling,Male,Lightweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Vladimir Kuzmin,66.9,175.0,Russia,27,Fight Club Archangel Michael,Muay Thai,Male,Featherweight,3,3,0,0,0,0,3,0,0,0,0,1,1,6
+Wail Karroumi,-1,175.0,Morocco / Netherlands,31,Tiger Muay Thai,Kickboxing,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Walter “The Snatch” Cogliandro,-1,177.0,Italy,33,SBG Ireland,MMA,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Walter “Iron Hands” Goncalves,61.6,161.0,Brazil,26,Blackthai CT,Muay Thai,Male,Bantamweight,2,6,0,0,0,0,1,0,1,0,0,2,1,8
+Wanchuchai Kaewsamrit,57.2,166.0,Thailand,29,Keawsamrit,Muay Thai,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Wang “Sea Thunderbolt” Chen Hao,61.2,170.0,China,30,Huangwei Fighting Club,Kickboxing,Male,Flyweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Wang Hu,70.3,175.0,China,26,Daqin Qianqiu Fight Club,MMA,Male,Featherweight,1,2,0,0,0,0,1,0,0,2,0,0,0,3
+Wang Jia Le,61.2,172.0,China,27,Mowang Gedou,Muay Thai,Male,Flyweight,1,2,0,1,0,0,0,0,1,0,0,1,0,3
+Wang Jian Hong,56.7,168.0,China,32,TOP-1 Fighting Club,MMA,Male,Flyweight,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+Wang Jing Jia,65.8,170.0,China,33,Sunkin International Fight Club,MMA,Male,Featherweight,2,2,0,0,1,0,0,1,1,0,0,1,0,4
+Wang “Lil Squinty Wang” Kaifeng,-1,175.0,China,22,XingHui BoJi Club,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Wang Mao Lun,56.7,170.0,China,27,ET Club,MMA,Male,Flyweight,1,2,0,1,0,0,0,0,1,1,0,0,0,3
+Wang Shi Qi,72.0,175.0,China,33,CTC,MMA,Male,Lightweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+“Northwestern Wolf” Wang Shuai,61.2,170.0,China,30,SHLC MMA,MMA,Male,Flyweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+“Little Whirlwind” Wang Shuo,61.2,169.0,China,30,Sunkin International Fight Club,MMA,Male,Flyweight,1,2,0,0,0,0,0,0,0,1,0,1,0,3
+“Mr. Tough” Wang Tan Zhao,70.3,175.0,China,30,SHLC MMA,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Wang “Metal Storm” Wenfeng,61.2,176.0,China,32,Xingbo Shengshi Fight Club,Kickboxing,Male,Flyweight,1,2,0,0,0,0,1,0,0,0,0,1,1,3
+Wang Yuhan,55.1,168.0,China,17,Sheng Li Ren He,Kickboxing,Male,Strawweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Wang Zhen,61.2,165.0,China,27,TOP-1 Fighting Club,MMA,Male,Flyweight,3,2,0,1,0,0,1,1,0,0,0,2,0,5
+Wang Zhen Dong,65.8,177.0,China,29,Shengli Fight Club,Kickboxing,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Wanpadej Looksuan,-1,172.0,Thailand,22,Looksuan,Muay Thai,Male,Out of range,2,1,0,0,0,0,1,0,1,0,0,0,0,3
+Watcharaphon PK Saenchai,-1,163.0,Thailand,32,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,4,0,0,1,0,0,0,0,0,0,0,0,0,4
+Watcharaphon Singha Mawynn,-1,180.0,Thailand,22,Singha Mawynn,Muay Thai,Male,Out of range,3,3,0,0,0,0,2,0,0,0,0,2,0,6
+Wei Rui,65.4,175.0,China,34,1,Kickboxing,Male,Bantamweight,1,1,0,0,0,0,1,0,0,0,0,1,0,2
+“The Great Sage” Wei Ziqin,61.2,175.0,China,25,White Shark Fight Club,Muay Thai,Male,Flyweight,5,2,0,3,0,0,2,0,0,0,0,1,1,7
+Wen Yun Bin,61.2,170.0,China,30,Chengdu Ashura Fight Club,MMA,Male,Flyweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Wilachon PK Saenchai,67.8,180.0,Laos,24,PK Saenchai Muaythaigym,Muay Thai,Male,Featherweight,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Wilian “Samurai” Poles,-1,-1.0,Brazil / Canada,28,Astra Fight Team,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Will “Warfare” Drewitt,76.6,185.0,United Kingdom,25,Rocheys / Team Underground,MMA,Male,Lightweight,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+Win Sitjanim,57.3,168.0,Thailand,24,Sitjanim,Muay Thai,Male,Flyweight,1,3,0,0,0,0,0,0,0,0,0,1,1,4
+Windson Ramos,60.9,168.0,Brazil,33,Checkmat,MMA,Male,Flyweight,1,1,0,0,0,0,1,0,1,0,0,0,0,2
+“Dynamic” Woo Sung Hoon,60.9,165.0,South Korea,33,Team Mad,MMA,Male,Flyweight,2,2,0,1,0,0,0,0,0,0,0,1,1,4
+Worapon Lukjaoporongtom,-1,168.0,Thailand,22,Sor Dechapan,Muay Thai,Male,Out of range,4,4,0,0,0,0,3,0,0,0,0,2,2,8
+Wuttikrai Wor Chakrawut,-1,174.0,Thailand,23,Wor Chakrawut,Muay Thai,Male,Out of range,2,0,0,1,0,0,0,0,0,0,0,0,0,2
+Xavier Gonzalez,-1,171.0,Spain,23,Sor Dechapan,Muay Thai,Male,Out of range,5,5,0,0,0,0,2,1,0,0,0,2,2,10
+“The Fire Dragon King” Xia Lian Yang,63.0,170.0,China,29,Shanghai Animal,MMA,Male,Bantamweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+“Ghost Boy” Xia Ming Quan,63.0,173.0,China,24,Hebei Wanshi Fight Club,MMA,Male,Bantamweight,1,2,0,0,1,0,0,0,1,0,0,1,0,3
+Xiatihe Zhumatai,63.0,177.0,China,27,Haoyue Fight Club,MMA,Male,Bantamweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Xie Long Long,56.7,170.0,China,26,Haosheng MMA,MMA,Male,Flyweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+“The Hunter” Xie Wei,61.0,170.0,China,28,Sunkin International Fight Club,MMA,Male,Flyweight,7,4,0,6,0,0,0,0,1,1,0,2,0,11
+Xie Xiao Hong,65.8,172.0,China,34,Fighting Bros Club,MMA,Male,Featherweight,1,2,0,0,0,0,1,0,1,1,0,0,0,3
+“Scholar Swordsman” Xie Yu Hang,65.8,173.0,China,32,Changsha Great Muay Thai Gym,Kickboxing,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Xie Zhipeng,65.3,170.0,China,29,Sunkin International Fight Club,MMA,Male,Bantamweight,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+Xiong Pi Ping,61.2,170.0,China,30,Sunkin International Fight Club,MMA,Male,Flyweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Xu Hong Xi,68.1,173.0,China,25,Ninja MMA,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Xu Yan Wei,65.8,175.0,China,26,Sunkin International Fight Club,MMA,Male,Featherweight,1,1,0,1,0,0,0,0,0,0,0,1,0,2
+Yamin PK Saenchai,61.1,180.0,Thailand,29,PK Saenchai Muaythaigym,Muay Thai,Male,Flyweight,2,1,0,1,0,0,0,0,0,0,0,0,0,3
+Yan Zhi Yuan,58.0,163.0,China,33,Longyun MMA,MMA,Male,Flyweight,3,2,0,0,1,0,2,0,0,0,0,2,0,5
+Yang Fei,68.0,170.0,China,32,SHLC MMA,MMA,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yang Fu Chong,62.6,178.0,China,29,Yunnan Kunli Fight Club,MMA,Male,Bantamweight,2,3,0,1,0,0,0,0,0,0,0,2,0,5
+“Sky Rocket” Yang Hua,61.2,173.0,China,27,Shengli Fight Club,Kickboxing,Male,Flyweight,2,2,0,0,0,0,1,1,0,0,0,1,1,4
+Yang Jia,56.7,167.0,China,32,Lion Heart,MMA,Male,Flyweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Yang Wu Lin,65.8,177.0,China,27,Shengli Fight Club,Kickboxing,Male,Featherweight,1,1,0,0,0,0,1,0,0,0,0,1,0,2
+“The Pangolin” Yang Ying Qiang,56.7,165.0,China,24,Super Gain Fighting Gym,MMA,Male,Flyweight,0,3,0,0,0,0,0,0,0,1,0,2,0,3
+Yangdam Jitmuangnon,-1,165.0,Thailand,25,Jitmuangnon Gym,Muay Thai,Male,Out of range,1,5,0,0,0,0,1,0,0,0,0,2,1,6
+Yeerzati “Grassland Hunter” Gemingnuer,-1,172.0,China,25,T-1 Fight Academy,MMA,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+“The Villain on the Prairie” Yi De Ri Gun,72.0,170.0,China,27,Hunters League Fighting Club,MMA,Male,Lightweight,1,1,0,1,0,0,0,0,1,0,0,0,0,2
+Yin Xiangzhao,-1,170.0,China,27,Guangzhou Chunbo Fight Club,MMA,Male,Out of range,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+Yod-IQ Or Pimolsri,-1,177.0,Thailand,23,PK Saenchai Muaythaigym,Muay Thai,Male,Out of range,9,1,0,1,0,0,5,2,0,0,0,1,0,10
+Yodanucha Chot Bangsaen,-1,162.0,Thailand,31,Army 3,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,1,0,0,0,0,1
+Yodbuangarm Luckybuntherng,-1,170.0,Thailand,20,Luckybuntherng,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Yoddoi Kaewsamrit,-1,160.0,Thailand,29,Kaewsamrit Gym,Muay Thai,Male,Out of range,2,5,0,0,0,0,0,0,0,0,0,3,0,7
+Yodduangjai SorJorMontree,-1,170.0,Thailand,20,Sor Jaruwan,Muay Thai,Male,Out of range,1,1,0,0,0,0,1,0,0,0,0,0,0,2
+Yodkitti FiatPathum,56.4,168.0,Thailand,20,Fiatpathum,Muay Thai,Male,Strawweight,2,1,0,0,0,0,0,0,0,0,0,0,0,3
+Yodkompatak Sinbimuaythai,-1,175.0,Thailand,29,Sinbi Muaythai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yodkritsada Sor Sommai,-1,165.0,Thailand,33,Sor Sommai,Muay Thai,Male,Out of range,0,5,0,0,0,0,0,0,0,0,0,2,1,5
+Yodkumarn Maxjandee,-1,165.0,Thailand,27,Maxjandee,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yodlekpet “The Destroyer” Or Atchariya,-1,162.0,Thailand,30,Sor Sommai,Muay Thai,Male,Out of range,7,5,0,2,0,0,1,1,0,0,0,3,1,12
+Yodnamnuea N and P Boxing,50.8,162.0,Thailand,23,N&P Boxing Gym,Muay Thai,Male,Atomweight,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Yodnumchai Fairtex,-1,-1.0,Thailand,20,3,Muay Thai,Male,Out of range,6,1,0,1,0,0,2,0,0,0,0,0,0,7
+Yodphupa Petkiatpet,65.8,167.0,Thailand,21,Petkiatpet,Muay Thai,Male,Featherweight,5,4,0,1,0,0,1,1,0,0,0,1,1,9
+Yodprabsuk Sor Ninthai,-1,167.0,Thailand,30,Sor Ninthai,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yodseksan Rodsuayjajed,-1,178.0,Thailand,20,Rodsuayjajed,Muay Thai,Male,Out of range,2,0,0,0,0,0,1,1,0,0,0,0,0,2
+Yodsila Chor Haapayak,-1,170.0,Thailand,24,Chor Haapayak,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yodsingdam Keatkhamtorn,56.1,170.0,Thailand,18,Keatgamthon,Muay Thai,Male,Strawweight,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Yodsinlapa Rodsuayjajed,-1,164.0,Thailand,24,Rodsuayjajed,Muay Thai,Male,Out of range,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Yodthongthai Sor Sommai,58.5,173.0,Thailand,32,Sor Sommai,Muay Thai,Male,Flyweight,3,3,0,2,0,0,1,0,0,0,0,1,0,6
+YodUdon BS Muaythai,52.6,165.0,Thailand,27,BS Muaythai,Muay Thai,Male,Strawweight,0,2,0,0,0,0,0,0,1,0,0,0,0,2
+Yodwittaya Petchompoo,-1,170.0,Thailand,26,Petchompoo,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Yok Sit Sorros,-1,180.0,Thailand,23,Sit Sorros / V WIN GYM,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yoon “The Big Heart” Chang Min,69.9,173.0,South Korea,31,Team Stungun,MMA,Male,Featherweight,7,2,0,1,4,0,1,1,1,0,0,0,0,9
+Yoshihiro “Sexyama” Akiyama,84.9,178.0,Japan / South Korea,49,Team Cloud,Special Rules,Male,Middleweight,2,2,0,1,0,0,0,0,1,0,0,1,0,4
+Yoshiki Nakahara,70.3,170.0,Japan,32,Mach Dojo,MMA,Male,Featherweight,3,1,0,2,0,1,0,0,0,1,0,0,0,4
+Yosuke “The Ninja” Saruta,56.6,160.0,Japan,37,Wajutsu Keishukai Hearts,MMA,Male,Strawweight,3,5,0,0,0,0,1,1,1,0,0,2,1,8
+Yota Shigemori,63.1,181.0,Japan,30,Crosspoint Kichijoji,Muay Thai,Male,Bantamweight,1,1,0,0,0,0,0,0,0,0,0,1,0,2
+Youcef Saad,69.0,-1.0,Algeria,23,Muay Thai Academy MTA,Kickboxing,Male,Featherweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+Yousif Qadir,-1,168.0,Iraq,28,Team Mehdi Zatout,Muay Thai,Male,Out of range,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+Youssef Assouik,70.31,190.0,Denmark / Morocco,30,Assouik Gym,Muay Thai,Male,Lightweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1
