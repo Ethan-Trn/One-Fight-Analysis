@@ -127,49 +127,63 @@ def StatScraper(link):
             j+=1
         #if weight isn't identified look for the opponent's weight
         else:
-            #Look at the Opponent Weight
-            athletes = soup.find_all("a", class_ = 'opponent')
-            if athletes:
-                for athlete in athletes:
-                    athlete_link = soup.find("a", class_ = 'is-link is-distinct')
-                    weight = f.OpponentWeight(athlete.get("href"),visted_links)
-                    if weight != -1:
-                        break
+            fightevent = soup.find_all("td",class_ = 'event d-none d-sm-table-cell')
+            if fightevent:
+                fightlink = fightevent[0].find("a", class_ = 'is-link is-distinct')
+                if fightlink:
+                    fightlink_url = fightlink.get("href")
+                    # print("Going Inside Fight Night")
+                    weight = f.InsideFightNight(fightlink_url,link) 
+                    print(weight)
+                    
+                else:
+                    print("No link found in second event.")
+                
             else:
-                #Look at the text if it says anything about the weight class they fight in 
-                paragraphs = soup.find_all('p')
-                for paragraph in paragraphs:
-                    text = paragraph.text.lower()
-                    if 'heavyweight' in text:
-                        weight = 102.06
-                        break
-                    elif 'light heavyweight' in text:
-                        weight = 92.99
-                        break
-                    elif 'middleweight' in text:
-                        weight = 83.91
-                        break
-                    elif 'welterweight' in text:
-                        weight = 77.11
-                        break
-                    elif 'lightweight' in text:
-                        weight = 70.31
-                        break
-                    elif 'featherweight' in text:
-                        weight = 65.77
-                        break
-                    elif 'bantamweight' in text:
-                        weight = 61.23
-                        break
-                    elif 'flyweight' in text:
-                        weight = 56.70
-                        break
-                    elif 'strawweight' in text:
-                        weight = 52.16
-                        break
-                    elif 'atomweight' in text:
-                        weight = 47.63
-                        break
+                print("Less than 2 events found.")
+            # #Look at the Opponent Weight
+            # athletes = soup.find_all("a", class_ = 'opponent')
+            # if athletes:
+            #     for athlete in athletes:
+            #         athlete_link = soup.find("a", class_ = 'is-link is-distinct')
+            #         weight = f.OpponentWeight(athlete.get("href"),visted_links)
+            #         if weight != -1:
+            #             break
+            # else:
+            #     #Look at the text if it says anything about the weight class they fight in 
+            #     paragraphs = soup.find_all('p')
+            #     for paragraph in paragraphs:
+            #         text = paragraph.text.lower()
+            #         if 'heavyweight' in text:
+            #             weight = 102.06
+            #             break
+            #         elif 'light heavyweight' in text:
+            #             weight = 92.99
+            #             break
+            #         elif 'middleweight' in text:
+            #             weight = 83.91
+            #             break
+            #         elif 'welterweight' in text:
+            #             weight = 77.11
+            #             break
+            #         elif 'lightweight' in text:
+            #             weight = 70.31
+            #             break
+            #         elif 'featherweight' in text:
+            #             weight = 65.77
+            #             break
+            #         elif 'bantamweight' in text:
+            #             weight = 61.23
+            #             break
+            #         elif 'flyweight' in text:
+            #             weight = 56.70
+            #             break
+            #         elif 'strawweight' in text:
+            #             weight = 52.16
+            #             break
+            #         elif 'atomweight' in text:
+            #             weight = 47.63
+            #             break
         visted_links.clear()
         visted_links.add(url)
         # print(weight)
@@ -232,7 +246,7 @@ def StatScraper(link):
     except (ValueError, TypeError):
         weight = -1
 
-    if weight >= 102.06 and weight <= 120.20:
+    if weight >= 102.058:
         weight_class = "Heavyweight"
     elif weight >= 92.99:
         weight_class = "Light Heavyweight"
@@ -256,7 +270,7 @@ def StatScraper(link):
         weight_class = "Out of range"
 
 
-    print(f"Name: {athlete_name}, Gender: {gender}, Weight: {weight}, Height: {height}, Country: {country}, Age: {age}, Team: {team}, Sport: {sport}, Weight Class: {weight_class}")
+    # print(f"Name: {athlete_name}, Gender: {gender}, Weight: {weight}, Height: {height}, Country: {country}, Age: {age}, Team: {team}, Sport: {sport}, Weight Class: {weight_class}")
     return [athlete_name, weight, height, country, age, team, sport, gender,weight_class]
 
     # else:
@@ -286,7 +300,16 @@ def Matchup(link):
                     opponent_tag = row.find('h5', class_='fs-100 m-0')
                     opponent_name = opponent_tag.text.strip() if opponent_tag else "Unknown"
                     date_tag = row.find('td', class_='date d-none d-xxl-table-cell')
-                    date = date_tag.text.strip() if date_tag else None
+                    if date_tag:
+                        # Try to get from data-timestamp first
+                        timestamp = date_tag.get('data-timestamp')
+                        if timestamp:
+                            # Convert UNIX timestamp to readable date
+                            date = pd.to_datetime(int(timestamp), unit='s').strftime('%b %d, %Y')
+                        else:
+                            date = date_tag.get_text(strip=True)
+                    else:
+                        date = None
                     #write this later for it to be your own
                     result_tag = row.find('div', class_="is-distinct is-positive") or \
                                 row.find('div', class_="is-distinct is-negative")
@@ -309,6 +332,8 @@ def Matchup(link):
                         MethodOf = "Knockout"
                     else:
                         MethodOf = "Unknown"
+                    # print("hello")
+                    # print(f"Fighter: {athlete_name}, Opponent: {opponent_name}, Result: {result}, Method: {MethodOf}, Date: {date}")
                     results.append([athlete_name, opponent_name, result, MethodOf,date])
                 except Exception as e:
                     print(f"Error processing opponent: {e}")
@@ -341,7 +366,16 @@ def Matchup(link):
                                 row.find('div', class_="is-distinct is-negative")
                     result = result_tag.text.strip() if result_tag else "Unknown"
                     date_tag = row.find('td', class_='date d-none d-xxl-table-cell')
-                    date = date_tag.text.strip() if date_tag else None
+                    if date_tag:
+                        # Try to get from data-timestamp first
+                        timestamp = date_tag.get('data-timestamp')
+                        if timestamp:
+                            # Convert UNIX timestamp to readable date
+                            date = pd.to_datetime(int(timestamp), unit='s').strftime('%b %d, %Y')
+                        else:
+                            date = date_tag.get_text(strip=True)
+                    else:
+                        date = None
                     MethodOf = row.find('td', class_="method d-none d-lg-table-cell").text.strip()
                     if "TKO" in MethodOf:
                         MethodOf = "TKO"
@@ -359,6 +393,8 @@ def Matchup(link):
                         MethodOf = "Knockout"
                     else:
                         MethodOf = "Unknown"
+                    # print("hello")
+                    # print(f"Fighter: {athlete_name}, Opponent: {opponent_name}, Result: {result}, Method: {MethodOf}, Date: {date}")
                     results.append([athlete_name, opponent_name, result, MethodOf,date])
                 except Exception as e:
                     print(f"Error processing opponent: {e}")
@@ -385,7 +421,7 @@ if __name__ == "__main__":
         print("Old CSV deleted. Starting fresh.")
     else:
         print("No old CSV found. You're good.")
-    # tag = 'https://www.onefc.com/athletes/anton-petrov/'
+    # tag = 'https://www.onefc.com/athletes/banluerit-or-atchariya/'
     # Matchup(tag)
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
     PageGather()

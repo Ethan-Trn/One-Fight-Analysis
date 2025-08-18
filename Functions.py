@@ -6,6 +6,61 @@ import pandas as pd # type: ignore
 import numpy as np # type: ignore
 import os
 import main as M # type: ignore
+import re
+
+
+def InsideFightNight(link,fighterlink):
+    #standard stuff
+    response = requests.get(link)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    sys.stdout.reconfigure(encoding='utf-8')
+    
+   
+    # get all the fights for this one event
+    events = soup.find_all('div',class_ = "event-matchup")
+    for event in events:
+    # event = events[9]
+    #see if the athlete is a part of this fight and if it is getting the weight
+        face1 = event.find('a', class_="face face1")
+        face2 = event.find('a', class_="face face2")
+        if face1:
+            face1 = face1.get("href")
+        if face2:
+            face2 = face2.get("href")
+        if (fighterlink == face1 or fighterlink == face2):
+            print("found")
+            title = event.find('div',class_ = "title")  
+            if title:
+                # Get all text inside the div (ignores tags)
+                    text = title.get_text(strip=True)
+                    text = str(text)
+                    text = text.lower()
+                    if text[0].isdigit():
+                        return float(text[0:3]) * 0.453592
+                    elif 'heavyweight' in text:
+                        return 102.06
+                    elif 'light heavyweight' in text:
+                        return 92.99
+                    elif 'middleweight' in text:
+                        return 83.91
+                    elif 'welterweight' in text:
+                        return 77.11
+                    elif 'lightweight' in text:
+                        return 70.31
+                    elif 'featherweight' in text:
+                        return 65.77
+                    elif 'bantamweight' in text:
+                        return 61.23
+                    elif 'flyweight' in text:
+                        return 56.70
+                    elif 'strawweight' in text:
+                        return 52.16
+                    elif 'atomweight' in text:
+                        return 47.63
+                    
+        else:
+            print("No face found in this event.")
+
 
 def OpponentWeight(link, visted_links):
     print("need Opponent Weight")
