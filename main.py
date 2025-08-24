@@ -34,7 +34,7 @@ def AthleteScraper(i):
         fights_writer = csv.writer(f_file)
 
         if not stats_exists:
-            stats_writer.writerow(['Name', 'Weight (kg)', 'Height (cm)', 'Country', 'Age', 'Team', 'Sport', 'Gender','Weight Class'
+            stats_writer.writerow(['Name', 'Weight (kg)', 'Height (cm)', 'Country', 'Age', 'Team', 'Sport', 'Gender','Weight Class',
                                    'WIN', 'LOSS', 'DRAW','W TKO', 'W Submission', 'W Disqualification', 'W Unanimous Decision',
                                    'W Split Decision', 'L TKO', 'L Submission', 'L Disqualification', 'L Unanimous Decision',
                                    'L Split Decision','Total Fights'])
@@ -411,21 +411,17 @@ def Matchup(link):
     return results
             
 if __name__ == "__main__":
-    if os.path.exists("athlete_stats.csv"):
-        os.remove("athlete_stats.csv")
-        print("Old CSV deleted. Starting fresh.")
-    else:
-        print("No old CSV found. You're good.")
-    if os.path.exists("fight_records.csv"):
-        os.remove("fight_records.csv")
-        print("Old CSV deleted. Starting fresh.")
-    else:
-        print("No old CSV found. You're good.")
+    # if os.path.exists("athlete_stats.csv"):
+    #     os.remove("athlete_stats.csv")
+    #     print("Old CSV deleted. Starting fresh.")
+    # else:
+    #     print("No old CSV found. You're good.")
+    # if os.path.exists("fight_records.csv"):
+    #     os.remove("fight_records.csv")
+    #     print("Old CSV deleted. Starting fresh.")
+    # else:
+    #     print("No old CSV found. You're good.")
     # tag = 'https://www.onefc.com/athletes/banluerit-or-atchariya/'
     # Matchup(tag)
     # PrintScraper('https://www.onefc.com/athletes/adilet-alimbek-uulu/')
     PageGather()
-    # StatScraper(tag)
-    # StatScraper('https://www.onefc.com/athletes/roman-kryklia/')
-    # OpponentWeight('https://www.onefc.com/athletes/demetrious-johnson/')
-    # f.AthleteScraper2(1)

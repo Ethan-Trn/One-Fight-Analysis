@@ -1,0 +1,54 @@
+Name,Weight (kg),Height (cm),Country,Age,Team,Sport,Gender,Weight Class,WIN,LOSS,DRAW,W TKO,W Submission,W Disqualification,W Unanimous Decision,W Split Decision,L TKO,L Submission,L Disqualification,L Unanimous Decision,L Split Decision,Total Fight,FinalElo,PeakElo
+Phetjeeja Lukjaoporongtom,51.9,160,Thailand,23,Team Mehdi Zatout,Kickboxing,Female,Atomweight,7,0,0,4,0,0,3,0,0,0,0,0,0,7,1434.42,1434.42
+Ayaka Miura,51.5,157,Japan,34,Tribe Tokyo MMA,MMA,Female,Atomweight,9,4,0,0,8,0,1,0,2,0,0,2,0,13,1357.62,1357.62
+Mayssa Bastos,47.63,152,Brazil,27,Art of Jiu-Jitsu Academy,Submission Grappling,Female,Atomweight,3,0,0,0,0,0,3,0,0,0,0,0,0,3,1298.31,1298.31
+Misaki,45.1,155,Japan,29,Team Forest,Kickboxing,Male,Atomweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1079.57,1079.57
+Tiffany Teo,51.8,165,Singapore,35,Matrix MMA,MMA,Male,Atomweight,8,2,0,1,4,0,3,0,1,0,0,1,0,10,1365.47,1365.47
+Junior Fairtex,47.63,157,Thailand,19,1,Muay Thai,Male,Atomweight,7,1,0,1,0,0,5,1,1,0,0,0,0,8,1191.95,1380.5
+Mei Yamaguchi,51.8,153,Japan,42,HybridFighter,Submission Grappling,Male,Atomweight,6,6,1,0,3,0,3,0,0,0,0,5,1,13,913.36,1248.17
+Mehdi Zatout,65.3,173,Algeria,41,Venum Training Camp Thailand,Boxing,Male,Bantamweight,4,3,0,1,0,0,2,1,0,0,0,3,0,7,1177.94,1177.94
+Jonathan Haggerty,65.1,170,United Kingdom,28,Knowlesy Academy / Team Underground,Kickboxing,Male,Bantamweight,9,3,0,1,0,0,5,0,1,0,0,1,0,12,1557.89,1643.96
+Kwon Won Il,65.4,178,South Korea,30,Extreme Combat / P-Boy MMA,MMA,Male,Bantamweight,9,5,0,7,0,0,0,0,1,2,0,1,0,14,1297.41,1379.63
+Nabil Anane,61.23,195,Algeria / Thailand,21,Team Mehdi Zatout,Muay Thai,Male,Bantamweight,7,1,0,1,0,0,4,0,0,0,0,0,0,8,1715.78,1715.78
+Shoya Ishiguro,61.23,167,Japan,28,Carpediem,Submission Grappling,Male,Bantamweight,4,1,0,0,2,0,2,0,0,1,0,0,0,5,1198.56,1248.05
+Garry Tonon,70.0,178,United States,33,Evolve MMA / Team Renzo Gracie,MMA,Female,Featherweight,10,3,0,2,7,0,1,0,0,1,0,1,0,13,1230.44,1405.79
+Tawanchai PK Saenchai,69.9,180,Thailand,26,PK Saenchai Muaythaigym,Kickboxing,Male,Featherweight,10,2,0,3,0,0,2,0,1,0,0,0,1,12,1363.62,1556.7
+Bibiano Fernandes,66.8,170,Brazil / Canada,45,AMC Pankration,MMA,Male,Featherweight,12,4,0,0,4,1,3,3,0,0,0,2,1,16,1356.01,1662.78
+Nico Carrillo,65.77,179,Scotland,26,Deachkalek Muay Thai Academy,Muay Thai,Male,Featherweight,5,1,0,3,0,0,0,0,1,0,0,0,0,6,1387.42,1442.52
+Jia Ao Qi,70.3,177,China,33,Fighting Elements Gym Team A,Sanda,Male,Featherweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1100.0,1100.0
+Fabricio Andrey,65.77,165,Brazil,25,Melqui Galvao,Submission Grappling,Male,Featherweight,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1100.0,1100.0
+Jackie Buntan,59.4,162,United States,28,Boxing Works,Kickboxing,Female,Flyweight,7,1,0,1,0,0,5,0,0,0,0,1,0,8,1319.08,1319.08
+Xiong Jing Nan,58.5,165,China,37,Evolve MMA,MMA,Female,Flyweight,11,1,0,4,0,0,6,0,0,1,0,0,0,12,1606.98,1606.98
+Smilla Sundell,57.4,178,Sweden,20,Fairtex Training Center,Muay Thai,Female,Flyweight,5,0,0,3,0,0,2,0,0,0,0,0,0,5,1456.7,1456.7
+Bianca Basilio,59.4,160,Brazil,29,Almeida Jiu Jitsu,Submission Grappling,Female,Flyweight,2,1,0,0,2,0,0,0,0,0,0,1,0,3,1080.03,1100.0
+Ilias Ennahachi,61.2,178,Morocco / Netherlands,29,S&B Gym,Kickboxing,Male,Flyweight,5,0,0,0,0,0,2,1,0,0,0,0,0,5,1386.9,1386.9
+Demetrious Johnson,60.7,160,United States,39,AMC Pankration / Evolve MMA,MMA,Male,Flyweight,6,1,0,0,2,0,3,0,0,0,0,0,0,7,1603.55,1603.55
+Superlek Kiatmoo9,61.0,171,Thailand,29,Kiatmoo9 Gym,Muay Thai,Male,Flyweight,15,2,0,1,0,0,9,1,0,0,0,2,0,17,1590.43,1733.82
+Diogo Reis,56.7,166,Brazil,23,Melqui Galvao,Submission Grappling,Male,Flyweight,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1161.31,1161.31
+Guto Inocente,118.3,191,Brazil,39,Real Combat Technique,Kickboxing,Male,Heavyweight,2,2,0,1,0,0,0,0,1,0,0,1,0,4,954.83,1171.99
+Oumar Kane,118.2,184,Senegal,33,Black Panther Sports / TRIPL3 MMA,MMA,Male,Heavyweight,7,1,0,3,0,0,2,1,1,0,0,0,0,8,1496.27,1496.27
+Roman Kryklia,105.1,200,Ukraine,33,Champ Belts,Muay Thai,Male,Heavyweight,7,0,0,3,0,0,1,0,0,0,0,0,0,7,1422.67,1422.67
+Andrei Stoica,100.6,188,Romania,38,Stoica Brothers Fight Academy,Kickboxing,Male,Light Heavyweight,3,3,0,0,0,0,1,0,0,0,0,2,1,6,1023.15,1168.08
+Leandro Ataides,93.0,184,Brazil,38,Nova União,MMA,Male,Light Heavyweight,6,4,0,3,0,0,1,0,0,0,0,1,1,10,973.92,1226.17
+Beybulat Isaev,101.8,190,Russia,31,Fight Club NORD 86,Muay Thai,Male,Light Heavyweight,4,2,0,1,0,0,2,0,0,0,0,0,0,6,1159.87,1159.87
+Sinsamut Klinmee,75.5,182,Thailand,29,Venum Training Camp,Kickboxing,Male,Lightweight,5,5,0,2,0,0,1,0,0,0,0,1,1,10,1029.06,1274.74
+Shinya Aoki,75.3,180,Japan,42,Evolve MMA,MMA,Male,Lightweight,15,9,0,1,12,0,2,0,5,3,0,1,0,24,1121.1,1515.17
+Regian Eersel,77.1,189,Suriname,32,Sityodtong Amsterdam,Muay Thai,Male,Lightweight,13,1,0,0,0,0,6,2,0,0,0,1,0,14,1521.99,1521.99
+Feng Xing Li,77.1,175,China,30,Fighting Elements Gym Team A,Sanda,Male,Lightweight,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1100.0,1100.0
+Tommy Langaker,76.8,178,Norway,31,Wulfing Academy,Submission Grappling,Male,Lightweight,2,3,0,0,1,0,1,0,0,0,0,3,0,5,945.88,1157.68
+Anatoly Malykhin,92.8,180,Russia,37,Golden Team,MMA,Male,Middleweight,6,1,0,3,0,0,0,0,0,0,0,0,1,7,1356.83,1493.64
+Andre Galvao,92.0,170,Brazil,42,Atos Jiu-Jitsu,Submission Grappling,Male,Middleweight,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1000.0,1000.0
+Marcelo Garcia,-1.0,-1,Brazil,42,1,Submission Grappling,Male,Out of range,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1090.43,1090.43
+Tammi Musumeci,55.9,165,United States,31,Pedigo Submission Fighting,Grappling,Female,Strawweight,2,0,0,0,0,0,2,0,0,0,0,0,0,2,1192.75,1192.75
+Anna Jaroonsak,53.1,172,Thailand,21,Jaroonsak Muaythai,Kickboxing,Female,Strawweight,3,2,0,0,0,0,1,1,1,0,0,0,1,5,998.79,1162.66
+Stamp Fairtex,52.2,157,Thailand,27,Fairtex Training Center,MMA,Female,Strawweight,14,4,0,3,2,0,6,2,0,2,0,0,1,18,1498.96,1498.96
+Allycia Hellen Rodrigues,52.2,161,Brazil,27,Phuket Fight Club,Muay Thai,Female,Strawweight,5,1,0,1,0,0,2,0,1,0,0,0,0,6,1322.46,1322.46
+Jessa Khan,52.2,152,Cambodia / United States,23,Art of Jiu-Jitsu Academy,Submission Grappling,Female,Strawweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1,947.84,1000.0
+Jonathan Di Bella,56.2,175,Canada / Italy,29,Team Di Bella Kickboxing,Kickboxing,Male,Strawweight,4,1,0,0,0,0,4,0,0,0,0,1,0,5,1352.25,1352.25
+Joshua Pacio,56.2,165,Philippines,29,Lions Nation MMA,MMA,Male,Strawweight,14,4,0,3,4,1,2,2,0,2,0,1,1,18,1521.13,1521.13
+Songchainoi Kiatsongrit,52.616672,156,24 Y,-1,Kiatsongrit Muay Thai Gym,Muay Thai,Male,Strawweight,9,0,0,0,0,0,5,0,0,0,0,0,0,9,1559.68,1559.68
+Liisi Vaht,52.16,170,Estonia,33,Estum Jiu-Jitsu / Fairtex Training Center,Submission Grappling,Male,Strawweight,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1100.0,1100.0
+Nieky Holzken,83.3,182,Netherlands,41,Team Holzken Helmon,Kickboxing,Male,Welterweight,6,4,0,2,0,0,1,0,0,0,0,3,0,10,1216.61,1219.97
+Christian Lee,77.3,180,Singapore / United States,27,Evolve MMA / United MMA,MMA,Male,Welterweight,17,4,1,12,4,0,1,0,0,1,1,1,1,22,1536.69,1587.17
+Keivan Soleimani,80.285784,180,Iran,34,Tiger Muay Thai,Muay Thai,Male,Welterweight,0,1,0,0,0,0,0,0,0,0,0,1,0,1,900.0,1000.0
+Tye Ruotolo,81.6,178,United States,22,Atos,Submission Grappling,Male,Welterweight,8,0,0,0,4,0,4,0,0,0,0,0,0,8,1538.26,1538.26
